@@ -39,6 +39,7 @@ public class Punto
   private void setX(double p_x){
     x = p_x;
   }
+  
   /**
    * Mutador privado para asignar un valor a "y"
    * @param p_y valor a asignar a la ordenada
