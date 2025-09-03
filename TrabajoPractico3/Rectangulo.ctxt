@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Rectangulo
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Rectangulo\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Rectangulo\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=p_origen\ p_ancho\ p_alto
 comment1.target=Rectangulo(Punto,\ double,\ double)
 comment10.params=

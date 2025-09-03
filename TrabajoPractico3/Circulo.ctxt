@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Circulo
-comment0.text=\r\n\ Ejercicio\ 3\r\n\ Modelado\ de\ la\ clase\ Circulo\r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Ejercicio\ 3\n\ Modelado\ de\ la\ clase\ Circulo\n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=p_radio\ p_centro
 comment1.target=Circulo(double,\ Punto)
-comment1.text=\r\n\ Constructor\ completo\r\n\ @param\ p_radio\ radio\ del\ circulo\r\n\ @param\ p_centro\ punto\ central\r\n
+comment1.text=\n\ Constructor\ completo\n\ @param\ p_radio\ radio\ del\ circulo\n\ @param\ p_centro\ punto\ central\n
 comment10.params=
 comment10.target=double\ superficie()
 comment11.params=otroCirculo
@@ -12,7 +12,7 @@ comment12.params=otroCirculo
 comment12.target=Circulo\ elMayor(Circulo)
 comment2.params=
 comment2.target=Circulo()
-comment2.text=\r\n\ Constructor\ sin\ par\u00E1metros\r\n
+comment2.text=\n\ Constructor\ sin\ par\u00E1metros\n
 comment3.params=p_centro
 comment3.target=void\ setCentro(Punto)
 comment4.params=p_radio

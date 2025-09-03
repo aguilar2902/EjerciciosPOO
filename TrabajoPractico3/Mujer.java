@@ -102,7 +102,7 @@ public class Mujer
             this.setEsposo(p_esposo);
             p_esposo.casarseCon(this);
         } else {
-            System.out.println("¡Casada!");
+            System.out.println("\t¡Casada!");
         }  
     }
     

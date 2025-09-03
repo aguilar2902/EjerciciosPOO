@@ -13,18 +13,16 @@ public class RegistroCivil
 {
     public static void main(String[] args){
         
-        /*System.out.println("---Test con constructor de casado/a---");
+        System.out.println("\t---Test con constructor de casado/a---");
         Hombre hombre2 = new Hombre("Marcos", "Blanco", 33); //Sin casarse
         Mujer mujer2 = new Mujer("Romina", "Arrua" , 29, hombre2); //se asocia al hombre2
         mujer2.mostrarEstadoCivil();
         hombre2.mostrarEstadoCivil();
-        System.out.println("---------------");
-        */
-        
+        System.out.println("\t-----FIN PRUEBA-----");
         
         Scanner teclado = new Scanner(System.in);
         teclado.useDelimiter("\n");
-        System.out.println("\t---Registro Civil---");
+        System.out.println("\n\t---Registro Civil---");
         
         //Datos del hombre
         System.out.println("\tIngreso de datos del hombre...");
@@ -59,7 +57,7 @@ public class RegistroCivil
     }
     public static void menu(Scanner p_scanner,Hombre p_hombre, Mujer p_mujer){
         
-        System.out.println("\t---MENÚ---");
+        System.out.println("\n\t---MENÚ---");
         System.out.println("1-Detalles del Hombre.");
         System.out.println("2-Detalles de la mujer.");
         System.out.println("3-Llevar a cabo el matrimonio.");
