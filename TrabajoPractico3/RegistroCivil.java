@@ -53,6 +53,7 @@ public class RegistroCivil
         } while(opcion != 0);
         
         System.out.println("---Programa finalizado---");
+        teclado.close();
         
     }
     public static void menu(Scanner p_scanner,Hombre p_hombre, Mujer p_mujer){
