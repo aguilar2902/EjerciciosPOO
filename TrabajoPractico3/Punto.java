@@ -1,5 +1,5 @@
 /**
- * Ejercicio número 6
+ * Ejercicio número 2 : Implementación de la clase Punto
  * 
  * @author Bengochea Marcelo José De Jesús
  * @author Aguilar Jonathan Alberto
@@ -15,58 +15,62 @@ public class Punto
   
   /**
    * Constructor de un punto sin parámetros
-   * Asignar el valor predeterminaod 0 a las 
-   * coordenadas
+   * Asignar el valor predeterminado 0 a las 
+   * coordenadas x e y
    */
   public Punto(){
-    setX(0);
-    setY(0);
+    this.setX(0);
+    this.setY(0);
   }
   /**
    * Constructor de un punto con parámetros
-   * @param p_x coordenada de abscisa a asignar
-   * @param p_y coordenada de ordenada a asignar
+   * @param p_x valor de abscisa a asignar
+   * @param p_y valor de ordenada a asignar
    */
   public Punto(double p_x, double p_y){
-    setX(p_x);
-    setY(p_y);
+    this.setX(p_x);
+    this.setY(p_y);
   }
   //Mutadores 
   /**
    * Mutador privado para asignar un valor a "x"
-   * @param p_x coordenada de abscisa 
+   * @param p_x coordenada de abscisa para el punto
    */
   private void setX(double p_x){
-    x = p_x;
+    this.x = p_x;
   }
   
   /**
-   * Mutador privado para asignar un valor a "y"
-   * @param p_y valor a asignar a la ordenada
+   * Mutador privado para la coordenada "y"
+   * @param p_y valor de "y" para el punto
    */
   private void setY(double p_y){
-    y = p_y;
+    this.y = p_y;
   }
   //Observadores
   /**
    * Observador para obtener el valor de "x"
-   * @return el valor de abscisa
+   * @return el valor de abscisa del punto
    */
   public double getX(){
-    return x;
+    return this.x;
   }
   /**
    * Observador para obtener el valor de "y"
-   * @return el valor de la ordenada
+   * @return el valor de la ordenada del punto
    */
   public double getY(){
-    return y;
+    return this.y;
   }
   //Otros métodos
+  /**
+   * Obtiene la distancia entre el punto desde el que se llama al método y otro punto enviado como parámetro.
+   * @param p_ptoDistante es el punto con el que se desea calcular la distancia respecto al que llama al método.
+   * @return la distancia entre los dos puntos
+   */
   public double distanciaA(Punto p_ptoDistante){
-      return Math.sqrt(Math.pow((p_ptoDistante.getX() - this.getX()) ,2) + Math.pow((p_ptoDistante.getY() - this.getY()), 2));
+      return Math.sqrt(Math.pow((p_ptoDistante.getX() - this.getX()), 2) + Math.pow((p_ptoDistante.getY() - this.getY()), 2));
   }
-  
   
   /**
    * Método para cambiar la posición del punto
@@ -75,15 +79,15 @@ public class Punto
    * @param p_dy desplazamiento requerido para la ordenada
    */
   public void desplazar(double p_dx, double p_dy){
-    setX(getX() + p_dx);
-    setY(getY() + p_dy);
+    this.setX(this.getX() + p_dx);
+    this.setY(this.getY() + p_dy);
   }
   /**
-   * Método para imprimir en pantalla información sobre el
+   * Imprime en pantalla información sobre el
    * punto en formato: "Punto. X:[valor x], Y:[valor y]"
    */
   public void mostrar(){
-    System.out.println("Punto. X:" + getX() + ", Y:" + getY());
+    System.out.println("Punto. X:" + this.getX() + ", Y:" + this.getY());
   }
   /**
    * Método que retorna una cadena de texto con información
