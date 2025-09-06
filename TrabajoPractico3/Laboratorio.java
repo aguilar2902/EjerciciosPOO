@@ -1,9 +1,9 @@
 /**
  * Ejercicio 1 - tp 3
- * 
+ * Implementación de la clase Laboratorio
  * @author Bengochea Marcelo José De Jesús
  * @author Aguilar Jonathan Alberto
- * @version 1.00 18-08-25
+ * @version 1.00
  */
 public class Laboratorio
 {
@@ -27,11 +27,11 @@ public class Laboratorio
    */
   public Laboratorio(String p_nombre, String p_domicilio, String p_telefono,
     int p_compraMinima, int p_diaEnt){
-    setNombre(p_nombre);
-    setDomicilio(p_domicilio);
-    setTelefono(p_telefono);
-    setCompraMinima(p_compraMinima);
-    setDiaEntrega(p_diaEnt);
+    this.setNombre(p_nombre);
+    this.setDomicilio(p_domicilio);
+    this.setTelefono(p_telefono);
+    this.setCompraMinima(p_compraMinima);
+    this.setDiaEntrega(p_diaEnt);
   }
   /**
    * Método Constructor para los datos mínimos
@@ -40,9 +40,9 @@ public class Laboratorio
    * @param p_telefono número de teléfono del laboratorio
    */
   public Laboratorio(String p_nombre, String p_domicilio, String p_telefono){
-    setNombre(p_nombre);
-    setDomicilio(p_domicilio);
-    setTelefono(p_telefono);
+    this.setNombre(p_nombre);
+    this.setDomicilio(p_domicilio);
+    this.setTelefono(p_telefono);
   }
   //Mutadores
   /**
@@ -50,81 +50,55 @@ public class Laboratorio
    * @param p_nombre nombre del laboratorio
    */
   private void setNombre(String p_nombre){
-    nombre = p_nombre;
+    this.nombre = p_nombre;
   }
-  /**
-   * mutador privado para la dirección del laboratorio
-   * @param p_domicilio domicilio del laboratorio
-   */
   private void setDomicilio(String p_domicilio){
-    domicilio = p_domicilio;
+    this.domicilio = p_domicilio;
   }
-  /**
-   * Mutador para el teléfono del laboratorio
-   * @param p_telefono número de teléfono
-   */
   private void setTelefono(String p_telefono){
-    telefono = p_telefono;
+    this.telefono = p_telefono;
   }
-  /**
-   * Mutador para setear la compra mínima del laboratorio
-   * @param p_compraMinima compra mínima del laboratorio
-   */
   private void setCompraMinima(int p_compraMinima){
-    compraMinima = p_compraMinima;
+    this.compraMinima = p_compraMinima;
   }
-  /**
-   * Mutador para agregar/modificar día de entrega
-   * @param p_diaEnt día de entrega
-   */
   private void setDiaEntrega(int p_diaEnt){
-    diaEntrega = p_diaEnt;
+    this.diaEntrega = p_diaEnt;
   }
   //Observadores
   /**
-   * @return nombre del laboratorio
+   * Observador para el nombre del lab.
+   * @return el nombre del laboratorio 
    */
   public String getNombre(){
-    return nombre;
+    return this.nombre;
   }
-  /**
-   * @return el domicilio del laboratorio
-   */
   public String getDomicilio(){
-    return domicilio;
+    return this.domicilio;
   }
-  /**
-   * @return el teléfono del laboratorio
-   */
   public String getTelefono(){
-    return telefono;
+    return this.telefono;
   }
-  /**
-   * @return la compra mínima como entero
-   */
   public int getCompraMinima(){
-    return compraMinima;
+    return this.compraMinima;
   }
-  /**
-   * @return el día de entrega
-   */
   public int getDiaEntrega(){
-    return diaEntrega;
+    return this.diaEntrega;
   }
+  
   //Mutadores especiales
   /**
    * Mutador público para asignar una nueva compra mínima
    * @param p_compraMinima compra mínima del laboratorio
    */
   public void nuevaCompraMinima(int p_compraMinima){
-    setCompraMinima(p_compraMinima);
+    this.setCompraMinima(p_compraMinima);
   }
   /**
    * Mutador público para asignar un nuevo día de entrega
    * @param p_diaEnt día de entrega
    */
   public void nuevoDiaEntrega(int p_diaEnt){
-    setDiaEntrega(p_diaEnt);
+    this.setDiaEntrega(p_diaEnt);
   }
   //Otros métodos
   /**
@@ -132,7 +106,7 @@ public class Laboratorio
    * @return el nombre, domicilio y teléfono del laboratorio
    */
   public String mostrar(){
-    return "\tLaboratorio: " + getNombre() + "\n\tDomicilio: " +
-      getDomicilio() + " - " + "Teléfono: " + getTelefono(); 
+    return "\tLaboratorio: " + this.getNombre() + "\n\tDomicilio: " +
+      this.getDomicilio() + " - " + "Teléfono: " + this.getTelefono(); 
   }  
 }

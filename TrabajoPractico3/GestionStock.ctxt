@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=GestionStock
+comment0.text=\n\ Clase\ ejecutable\ para\ probar\ las\ clases\ Laboratorio\ y\ Producto\n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\n\ @author\ Aguilar\ Jonathan\ Alberto\n\ @version\ 1.00\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2
