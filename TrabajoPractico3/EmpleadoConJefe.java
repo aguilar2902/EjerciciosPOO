@@ -224,6 +224,13 @@ public class EmpleadoConJefe
     System.out.println("\tCUIL: " + this.getCuil() + " Antigüedad: " + this.antiguedad() + " años de servicio");
     System.out.println("\tSueldo Neto: $" + this.sueldoNeto());
     System.out.println("\tResponde a: " + auxiliar);
+    if(this.esAniversario()){
+      System.out.println("\n¡Feliz anivesario!");
+      System.out.println("Posee autorización para retirarse antes.");
+    }
+    if(this.getJefe() != null){
+        System.out.println("----Autorizado por " + this.getJefe().apeYNom() + " ----");
+    }
   }
   
   /**
@@ -243,7 +250,8 @@ public class EmpleadoConJefe
   public boolean esAniversario(){
       Calendar fechaHoy = Calendar.getInstance();
       if((this.getFechaIngreso().get(Calendar.DATE) == fechaHoy.get(Calendar.DATE)) &&
-          (this.getFechaIngreso().get(Calendar.MONTH) == fechaHoy.get(Calendar.MONTH))){
+       (this.getFechaIngreso().get(Calendar.MONTH) == fechaHoy.get(Calendar.MONTH)) &&
+       (this.getAnioIngreso() != fechaHoy.get(Calendar.YEAR))){
           return true;
       }else{
           return false;

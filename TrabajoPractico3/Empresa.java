@@ -46,6 +46,7 @@ public class Empresa
         System.out.println("Posee autorización para retirarse antes");
     }
     
+    //Pruebas EmpleadoConJefe --- la autorización a partir de aqui está dentro de mostrar()
     System.out.println("\t\n---PRUEBAS EMPLEADOS CON JEFE---");
     //prueba EmpleadoConJefe sin jefe y con año de ingreso
     System.out.println("\t----- Prueba Empleado 2 sin JEFE y con año de ingreso-----");
@@ -84,10 +85,6 @@ public class Empresa
     System.out.println();
     EmpleadoConJefe empleado3 = new EmpleadoConJefe(cuil3, apellido3, nombre3, sueldoBasico3, fechaIngreso);
     empleado3.mostrar();
-    if(empleado3.esAniversario()){
-      System.out.println("\n¡Feliz anivesario!");
-      System.out.println("Posee autorización para retirarse antes");
-    }
     System.out.println("\n");
         
     //prueba EmpleadoConJefe con jefe (empleado2)
@@ -110,10 +107,7 @@ public class Empresa
     System.out.println("\n");
     EmpleadoConJefe empleado4 = new EmpleadoConJefe(cuil4, apellido4, nombre4, sueldoBasico4, fechaIngreso, empleado2);
     empleado4.mostrar();
-    if(empleado4.esAniversario()){
-      System.out.println("\n¡Feliz anivesario!");
-      System.out.println("Posee autorización para retirarse antes");
-    }
+
     System.out.println("\t----FINALIZADO----");
     teclado.close();
     }
