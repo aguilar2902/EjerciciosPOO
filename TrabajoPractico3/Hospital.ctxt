@@ -1,16 +1,20 @@
 #BlueJ class context
 comment0.target=Hospital
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Hospital\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Ejercicio\ 8\n\ Implementaci\u00F3n\ de\ la\ clase\ Hospital\n\ \n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\n\ @author\ Aguilar\ Jonathan\ Alberto\n\ @version\ 1.00\n
 comment1.params=p_hospital\ p_director
 comment1.target=Hospital(java.lang.String,\ java.lang.String)
+comment1.text=\n\ Constructor\ de\ un\ Hospital\n\ @param\ p_hospital\ nombre\ del\ hospital\n\ @param\ p_director\ nombre\ de\ la\ persona\ a\ cargo\ del\ mismo\n
 comment2.params=p_hospital
 comment2.target=void\ setNombreHospital(java.lang.String)
+comment2.text=\n\ @param\ asigna\ un\ nombre\ al\ hospital\n
 comment3.params=p_director
 comment3.target=void\ setNombreDirector(java.lang.String)
 comment4.params=
 comment4.target=java.lang.String\ getNombreHospital()
+comment4.text=\n\ @return\ el\ nombre\ del\ hospital\n
 comment5.params=
 comment5.target=java.lang.String\ getNombreDirector()
 comment6.params=p_paciente
 comment6.target=void\ consultaDatosFiliatorios(Paciente)
+comment6.text=\n\ Muestra\ adem\u00E1s\ de\ los\ datos\ del\ hospital\ (nombre,director),\n\ los\ correspondientes\ al\ paciente\ recibido\ como\ par\u00E1metro\n\ @param\ p_paciente\ un\ objeto\ del\ tipo\ Paciente\n
 numComments=7
