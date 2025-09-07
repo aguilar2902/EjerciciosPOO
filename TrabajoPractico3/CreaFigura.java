@@ -80,7 +80,6 @@ public class CreaFigura
         rectangulo1.elMayor(rectangulo2).caracteristicas();
         System.out.println("La distancia entre los dos rectángulos es de " + rectangulo1.distanciaA(rectangulo2) + " unidades.");
 
-        
-        
+        teclado.close();    
     }
 }

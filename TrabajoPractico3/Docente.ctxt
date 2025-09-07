@@ -1,12 +1,15 @@
 #BlueJ class context
 comment0.target=Docente
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Docente\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Ejercicio\ 6\:\ Implementaci\u00F3n\ de\ la\ clase\ Docente\n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\n\ @author\ Aguilar\ Jonathan\ Alberto\n\ @version\ 1.00\n
 comment1.params=p_nombre\ p_grado\ p_sueldo\ p_asigFamiliar
 comment1.target=Docente(java.lang.String,\ java.lang.String,\ double,\ double)
+comment1.text=\n\ Constructor\ de\ Docente\n\ @param\ p_nombre\ nombre\ y\ apellido\ del\ docente\n\ @param\ p_grado\ grado\ del\ docente\n\ @param\ p_sueldo\ es\ el\ sueldo\ b\u00E1sico\ asignado\ al\ docente\n\ @param\ p_asigFamiliar\ asignaci\u00F3n\ familiar\ que\ le\ corresponde\ al\ docente\n
 comment10.params=
 comment10.target=double\ calcularSueldo()
+comment10.text=\n\ Calcula\ el\ sueldo\ del\ docente\ resultante\ de\ adicionar\ al\ sueldo\ b\u00E1sico\n\ la\ asignaci\u00F3n\ familiar\ del\ docente.\n\ @return\ el\ sueldo\ final\ que\ percibe\ el\ docente.\n
 comment2.params=p_nombre
 comment2.target=void\ setNombre(java.lang.String)
+comment2.text=\n\ @param\ p_nombre\ el\ nombre\ y\ apellido\ del\ docente\n
 comment3.params=p_grado
 comment3.target=void\ setGrado(java.lang.String)
 comment4.params=p_sueldo
@@ -15,6 +18,7 @@ comment5.params=p_asigFamiliar
 comment5.target=void\ setAsignacionFamiliar(double)
 comment6.params=
 comment6.target=java.lang.String\ getNombre()
+comment6.text=\n\ @return\ el\ nombre\ y\ apellido\ del\ docente\n
 comment7.params=
 comment7.target=java.lang.String\ getGrado()
 comment8.params=

@@ -1,20 +1,24 @@
 #BlueJ class context
 comment0.target=Escuela
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Escuela\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Ejercicio\ 6\:\ Implementaci\u00F3n\ de\ la\ clase\ Escuela\n\ Nota\:\ Aqu\u00ED\ se\ evidencia\ una\ relaci\u00F3n\ de\ dependencia\ (d\u00E9bil,\ por\ par\u00E1metro).\n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\n\ @author\ Aguilar\ Jonathan\ Alberto\n\ @version\ 1.00\n
 comment1.params=p_nombre\ p_domicilio\ p_director
 comment1.target=Escuela(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\n\ Constructor\ para\ una\ Escuela\n\ @param\ p_nombre\ nombre\ de\ la\ instituci\u00F3n\n\ @param\ p_domicilio\ ubicaci\u00F3n\ del\ instituci\u00F3n\n\ @param\ p_director\ autoridad\ designada\n
 comment2.params=p_nombre
 comment2.target=void\ setNombre(java.lang.String)
+comment2.text=\n\ Mutador\ privado\ que\ permite\ agregar/modificar\ el\ nombre\ de\ la\ instituci\u00F3n\n\ @param\ p_nombre\ el\ nombre\ que\ se\ desea\ asignar\ a\ la\ escuela\n
 comment3.params=p_domicilio
 comment3.target=void\ setDomicilio(java.lang.String)
 comment4.params=p_director
 comment4.target=void\ setDirector(java.lang.String)
 comment5.params=
 comment5.target=java.lang.String\ getNombre()
+comment5.text=\n\ @return\ el\ nombre\ que\ tiene\ asignado\ la\ escuela\n
 comment6.params=
 comment6.target=java.lang.String\ getDomicilio()
 comment7.params=
 comment7.target=java.lang.String\ getDirector()
 comment8.params=p_docente
 comment8.target=void\ imprimirRecibo(Docente)
+comment8.text=\n\ Muestra\ por\ pantalla\ el\ recibo\ de\ un\ docente\ con\ datos\ de\ la\ instituci\u00F3n\ y\n\ del\ docente(nombre,\ sueldo,\ sueldo\ b\u00E1sico\ y\ asignaci\u00F3n\ familiar)\n\ @param\ p_docente\ el\ objeto\ Docente\ sobre\ el\ que\ se\ emitir\u00E1\ el\ recibo\n
 numComments=9
