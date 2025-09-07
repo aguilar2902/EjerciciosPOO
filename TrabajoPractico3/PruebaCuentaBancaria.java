@@ -20,6 +20,7 @@ public class PruebaCuentaBancaria
         String nombre1 = teclado.next();
         System.out.print("Ingrese el/los apellido/s del titular: ");
         String apellido1 = teclado.next();
+        //Solo agrega el año de nacimiento. Se setea el mes y dia presente.
         System.out.print("Ingrese el año de nacimiento: ");
         int anioNacimiento1 = teclado.nextInt();
         Persona persona1 = new Persona(nroDni1, nombre1, apellido1, anioNacimiento1);

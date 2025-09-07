@@ -1,18 +1,19 @@
 /**
  * Clase Banco ejecutable, para las pruebas de Persona, CajaDeAhorro y 
  * CuentaCorriente
- * 
+ * Nota: Para cumpleaños agregar dia y mes actual para ver la funcionalidad.
  * @author Bengochea Marcelo José De Jesús
  * @author Aguilar Jonathan Alberto
  * @version 1.00
  */
-import java.util.Scanner;
+import java.util.*;
 public class Banco
 {
     public static void main(String[] args){
         //Instancia de Scanner para ingresos por teclado
         Scanner teclado = new Scanner(System.in);
         teclado.useDelimiter("\n");
+        Calendar fechaNacPersona = Calendar.getInstance();
         
         //Creación de una instancia Persona, que hará de titular de las cuentas
         System.out.println("\t---Agregar titular(Persona)---");
@@ -22,9 +23,15 @@ public class Banco
         String nombre1 = teclado.next();
         System.out.print("Ingrese el/los apellido/s del titular: ");
         String apellido1 = teclado.next();
+        //Guardado de fecha de nacimiento
+        System.out.print("Ingrese el día de nacimiento: ");
+        int diaNacimiento1 = teclado.nextInt();
+        System.out.println("Ingrese el mes de nacimiento: ");
+        int mesNacimiento1 = teclado.nextInt();
         System.out.print("Ingrese el año de nacimiento: ");
         int anioNacimiento1 = teclado.nextInt();
-        Persona persona1 = new Persona(nroDni1, nombre1, apellido1, anioNacimiento1);
+        fechaNacPersona.set(anioNacimiento1,(mesNacimiento1 - 1), diaNacimiento1);
+        Persona persona1 = new Persona(nroDni1, nombre1, apellido1, fechaNacPersona);
         System.out.println("\tTitular agregado....\n");
         
         //Creación Cuenta Corriente
@@ -42,6 +49,11 @@ public class Banco
         int nroCajaDeAhorro = teclado.nextInt();
         CajaDeAhorro cajaDeAhorro = new CajaDeAhorro(nroCajaDeAhorro, persona1);
         System.out.println("Caja de ahorro creada\n");
+        
+        //Mostrar aviso de cumpleaños si se cumple la condición de que coincide día y mes
+        if(persona1.esCumpleanios()){
+            System.out.println("\n\t***¡¡¡FELIZ CUMPLEAÑOS!!!!!***");
+        }
         
         //Implementación de un menú para un manejo más cómodo de las pruebas
         menu(teclado, cuentaCorriente, cajaDeAhorro);
