@@ -62,7 +62,7 @@ public class Empresa
     int anioIngreso2 = teclado.nextInt();
     System.out.println();
     EmpleadoConJefe empleado2 = new EmpleadoConJefe(cuil2, apellido2, nombre2, sueldoBasico2, anioIngreso2);
-    empleado2.mostrar();
+    empleado2.mostrarPantalla();
     System.out.println("\n");
     
     //prueba EmpleadoConJefe sin jefe y con fecha de ingreso
@@ -84,7 +84,7 @@ public class Empresa
     fechaIngreso.set(anioIngreso3, (mesIngreso3 - 1), diaIngreso3);
     System.out.println();
     EmpleadoConJefe empleado3 = new EmpleadoConJefe(cuil3, apellido3, nombre3, sueldoBasico3, fechaIngreso);
-    empleado3.mostrar();
+    empleado3.mostrarPantalla();
     System.out.println("\n");
         
     //prueba EmpleadoConJefe con jefe (empleado2)
@@ -106,7 +106,7 @@ public class Empresa
     fechaIngreso.set(anioIngreso4, (mesIngreso4 - 1), diaIngreso4);
     System.out.println("\n");
     EmpleadoConJefe empleado4 = new EmpleadoConJefe(cuil4, apellido4, nombre4, sueldoBasico4, fechaIngreso, empleado2);
-    empleado4.mostrar();
+    empleado4.mostrarPantalla();
 
     System.out.println("\t----FINALIZADO----");
     teclado.close();

@@ -211,7 +211,7 @@ public class EmpleadoConJefe
   /**
    * Muestra por pantalla Nombre y apellido, cuil, años de servicio, sueldo neto y a quien responde
    */
-  public void mostrar(){
+  public void mostrarPantalla(){
     String auxiliar;
     
     if(this.getJefe() == null){
@@ -243,9 +243,9 @@ public class EmpleadoConJefe
   }
   
   /**
-   * Muestra si el empleado ha cumplido un año mas en la empresa
+   * Confirma si en el día de la fecha se cumple un año más del empleado en la empresa
    * 
-   * @return true o false
+   * @return true o false según se cumpla un aniversario o no
    */
   public boolean esAniversario(){
       Calendar fechaHoy = Calendar.getInstance();
