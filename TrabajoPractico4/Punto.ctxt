@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Punto
-comment0.text=\r\n\ Ejercicio\ n\u00FAmero\ 1\ \:\ Implementaci\u00F3n\ de\ la\ clase\ Punto\ -\ TP4\r\n\ \r\n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\r\n\ @author\ Aguilar\ Jonathan\ Alberto\r\n\ @version\ 1.00\r\n
+comment0.text=\r\n\ Ejercicio\ n\u00FAmero\ 1\ \:\ Reutilizaci\u00F3n\ de\ la\ clase\ Punto\r\n\ \r\n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\r\n\ @author\ Aguilar\ Jonathan\ Alberto\r\n\ @version\ 1.00\r\n
 comment1.params=
 comment1.target=Punto()
 comment1.text=\r\n\ Constructor\ de\ un\ punto\ sin\ par\u00E1metros\r\n\ Asignar\ el\ valor\ predeterminado\ 0\ a\ las\ \r\n\ coordenadas\ x\ e\ y\r\n

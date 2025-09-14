@@ -1,8 +1,9 @@
 /**
- * Write a description of class ArrayDePuntos here.
+ * Ejercicio numero 1: Impĺementación de la clase ejecutable ArrayDePuntos
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Bengochea Marcelo José De Jesús
+ * @author Aguilar Jonathan Alberto
+ * @version 1.00
  */
 
 import java.util.Scanner;

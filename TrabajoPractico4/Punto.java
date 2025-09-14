@@ -1,5 +1,5 @@
 /**
- * Ejercicio número 1 : Implementación de la clase Punto - TP4
+ * Ejercicio número 1 : Reutilización de la clase Punto
  * 
  * @author Bengochea Marcelo José De Jesús
  * @author Aguilar Jonathan Alberto
