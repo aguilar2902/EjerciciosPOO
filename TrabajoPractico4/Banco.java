@@ -74,6 +74,9 @@ public class Banco
     }
     
     public boolean quitarEmpleado(Empleado p_empleado){
+        if(this.getEmpleados().size() == 1){
+            return false;
+        }
         return this.getEmpleados().remove(p_empleado);
     }
     

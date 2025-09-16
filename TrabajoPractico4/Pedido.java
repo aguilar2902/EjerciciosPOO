@@ -22,7 +22,7 @@ public class Pedido
    * @param p_cliente datos del Cliente
    * @param p_productos Lista de productos
    */
-    public Pedido(Calendar p_fecha, Cliente p_cliente, ArrayList<Producto> p_productos){
+    public Pedido(Calendar p_fecha, Cliente p_cliente, ArrayList p_productos){
         this.setFecha(p_fecha);
         this.setCliente(p_cliente);
         this.setProductos(p_productos);
@@ -38,7 +38,7 @@ public class Pedido
         this.setFecha(p_fecha);
         this.setCliente(p_cliente);
         
-        ArrayList<Producto> lista = new ArrayList<>();
+        ArrayList lista = new ArrayList<>();
         lista.add(p_producto);
         this.setProductos(lista);
     }
@@ -56,7 +56,7 @@ public class Pedido
         this.cliente = p_cliente;
     }
     
-    private void setProductos(ArrayList<Producto> p_producto){
+    private void setProductos(ArrayList p_producto){
         this.productos = p_producto;
     }
     
@@ -73,7 +73,7 @@ public class Pedido
         return this.cliente;
     }
     
-    public ArrayList<Producto> getProductos(){
+    public ArrayList getProductos(){
         return this.productos;
     }
     
