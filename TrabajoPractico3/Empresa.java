@@ -26,7 +26,7 @@ public class Empresa
     System.out.print("Año de ingreso a la empresa: ");
     int anioIngreso = teclado.nextInt();
     fechaIngreso.set(anioIngreso,(mesIngreso - 1),diaIngreso);
-    System.out.println("--(cuil,apellido,nombre,sueldo básico):" );
+    System.out.println("--(cuil,apellido/s,nombre/s,sueldo básico):" );
     //Creando una instancia de empleado para hacer las pruebas
     Empleado empleado1 = new Empleado(
       Long.parseLong(teclado.next()),
@@ -35,16 +35,13 @@ public class Empresa
       teclado.nextDouble(),
       fechaIngreso);
       
-    System.out.println("Probando observadores como getCuil(), getSueldoBasico() y getAnioIngreso(): " +
+    System.out.println("*---Probando observadores como getCuil(), getSueldoBasico() y getAnioIngreso(): " +
       empleado1.getCuil() + ", " + empleado1.getSueldoBasico() + ", " + empleado1.getAnioIngreso());
       
     empleado1.mostrar();
       
     System.out.println(empleado1.mostrarLinea());
-    if(empleado1.esAniversario()){
-        System.out.println("\n¡Feliz anivesario!");
-        System.out.println("Posee autorización para retirarse antes");
-    }
+    
     
     //Pruebas EmpleadoConJefe --- la autorización a partir de aqui está dentro de mostrar()
     System.out.println("\t\n---PRUEBAS EMPLEADOS CON JEFE---");
@@ -52,9 +49,9 @@ public class Empresa
     System.out.println("\t----- Prueba Empleado 2 sin JEFE y con año de ingreso-----");
     System.out.print("Ingrese el cuil del empleado: ");
     long cuil2 = teclado.nextLong();
-    System.out.print("Ingrese el apellido: ");
+    System.out.print("Ingrese el/los apellido/s: ");
     String apellido2 = teclado.next();
-    System.out.print("Ingrese el nombre: ");
+    System.out.print("Ingrese el/los nombre/s: ");
     String nombre2 = teclado.next();
     System.out.print("Ingrese el sueldo basico: ");
     double sueldoBasico2 = teclado.nextDouble();
@@ -69,9 +66,9 @@ public class Empresa
     System.out.println("\t----- Prueba Empleado 3 sin JEFE y con fecha de ingreso -----");
     System.out.print("Ingrese el cuil del empleado: ");
     long cuil3 = teclado.nextLong();
-    System.out.print("Ingrese el apellido: ");
+    System.out.print("Ingrese el/los apellido/s: ");
     String apellido3= teclado.next();
-    System.out.print("Ingrese el nombre: ");
+    System.out.print("Ingrese el/los nombre/s: ");
     String nombre3 = teclado.next();
     System.out.print("Ingrese el sueldo basico: ");
     double sueldoBasico3 = teclado.nextDouble();
@@ -91,9 +88,9 @@ public class Empresa
     System.out.println("\t----- Prueba Empleado 4 CON JEFE (Empleado 2) -----");
     System.out.print("Ingrese el cuil del empleado: ");
     long cuil4 = teclado.nextLong();
-    System.out.print("Ingrese el apellido: ");
+    System.out.print("Ingrese el/los apellido/s: ");
     String apellido4 = teclado.next();
-    System.out.print("Ingrese el nombre: ");
+    System.out.print("Ingrese el/los nombre/s: ");
     String nombre4 = teclado.next();
     System.out.print("Ingrese el sueldo basico: ");
     double sueldoBasico4 = teclado.nextDouble();

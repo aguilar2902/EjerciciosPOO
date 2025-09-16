@@ -176,8 +176,13 @@ public class Empleado
   public void mostrar(){
     System.out.println("\tNombre y Apellido: " + this.nomYApe());
     System.out.println("\tCUIL: " + this.getCuil() + " Antigüedad: " +
-      this.antiguedad() + " años de servicio");
+      this.antiguedad() + " año/s de servicio");
     System.out.println("\tSueldo Neto: $" + this.sueldoNeto());
+    if(this.esAniversario()){
+        
+        System.out.println("\t*Tiene permiso para retirarse antes*");
+    }
+    
   }
   /**
    * Obtiene y formatea datos del empleado como una sola línea 

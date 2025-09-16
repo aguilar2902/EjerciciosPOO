@@ -212,24 +212,21 @@ public class EmpleadoConJefe
    * Muestra por pantalla Nombre y apellido, cuil, años de servicio, sueldo neto y a quien responde
    */
   public void mostrarPantalla(){
-    String auxiliar;
+    String responsableACargo;
     
     if(this.getJefe() == null){
-        auxiliar = "GERENTE GENERAL";
+        responsableACargo = "GERENTE GENERAL";
     }else{
-        auxiliar = this.getJefe().nomYApe();
+        responsableACargo = this.getJefe().nomYApe();
     }
     
-    System.out.println("\tNombre y Apellido: " + this.nomYApe());
-    System.out.println("\tCUIL: " + this.getCuil() + " Antigüedad: " + this.antiguedad() + " años de servicio");
-    System.out.println("\tSueldo Neto: $" + this.sueldoNeto());
-    System.out.println("\tResponde a: " + auxiliar);
-    if(this.esAniversario()){
-      System.out.println("\n¡Feliz anivesario!");
-      System.out.println("Posee autorización para retirarse antes.");
-    }
-    if(this.getJefe() != null){
-        System.out.println("----Autorizado por " + this.getJefe().apeYNom() + " ----");
+    Empleado empleadoTemp = new Empleado(this.getCuil(), this.getApellido(), this.getNombre(),
+        this.getSueldoBasico(), this.getFechaIngreso());   
+    empleadoTemp.mostrar();
+    System.out.println("\tResponde a: " + responsableACargo);
+    
+    if(empleadoTemp.esAniversario() && this.getJefe() != null){
+        System.out.println("\t----Permiso otorgado por " + this.getJefe().apeYNom() + " ----");
     }
   }
   
@@ -242,20 +239,4 @@ public class EmpleadoConJefe
     return this.getCuil() + ("\t") + this.apeYNom() + "\t........$" + this.sueldoNeto();
   }
   
-  /**
-   * Confirma si en el día de la fecha se cumple un año más del empleado en la empresa
-   * 
-   * @return true o false según se cumpla un aniversario o no
-   */
-  public boolean esAniversario(){
-      Calendar fechaHoy = Calendar.getInstance();
-      if((this.getFechaIngreso().get(Calendar.DATE) == fechaHoy.get(Calendar.DATE)) &&
-       (this.getFechaIngreso().get(Calendar.MONTH) == fechaHoy.get(Calendar.MONTH)) &&
-       (this.getAnioIngreso() != fechaHoy.get(Calendar.YEAR))){
-          return true;
-      }else{
-          return false;
-      }
-      
-  }
 }
