@@ -52,7 +52,7 @@ public class Banco
     
     
     /**
-     * Constructor de Banco con varios empleados y variascuentas bancarias
+     * Constructor de Banco con varios empleados y varias cuentas bancarias
      * 
      * @param p_nombre nombre del banco
      * @param p_localidad localidad donde se encuentra (objeto)
@@ -180,7 +180,7 @@ public class Banco
         System.out.println("\tLocalidad: " + this.getLocalidad().getNombre() + "    Provincia: " + this.getLocalidad().getProvincia());
         System.out.println();
         this.listarSueldos();
-        System.out.println("\tTotal a Pagar------------------------------------------------ $" + this.sueldosAPagar());
+        System.out.println("\n\tTotal a Pagar------------------------------------------------ $" + this.sueldosAPagar());
     }
     
     /**
