@@ -1,5 +1,5 @@
 /**
- * Ejercicio numero 1: Impĺementación de la clase ejecutable ArrayDePuntos
+ * Ejercicio numero 1: Implementación de la clase ejecutable ArrayDePuntos
  * 
  * @author Bengochea Marcelo José De Jesús
  * @author Aguilar Jonathan Alberto
