@@ -13,6 +13,7 @@ import java.text.*;
 public class TomaPedido
 {
     public static void main(String [] args){
+        
         //creo un cliente cualquiera
         Cliente cliente1 = new Cliente(123456, "Jorge", "Chamorro", 150000.00);
         
@@ -34,6 +35,18 @@ public class TomaPedido
         
         Pedido pedido1 = new Pedido(Calendar.getInstance(), cliente1, listaProductos);
         
+        pedido1.mostrarPedido();
+        
+        
+        //agregar un pedido y vuelvo a mostrar
+        
+        pedido1.agregarProducto(new Producto(1, "Tecnologia", "Reloj", 56000.00, lab));
+        System.out.println("\nAgregando nuevo pedido");
+        pedido1.mostrarPedido();
+        
+        //eliminar un pedido y vuelvo a mostrar
+        pedido1.quitarProducto(prod3);
+        System.out.println("\nEliminando el tercer pedido");
         pedido1.mostrarPedido();
     }
     

@@ -1,4 +1,3 @@
-
 /**
  * Ejercicio 2: Implementacion de la clase Pedido
  * 
@@ -80,7 +79,9 @@ public class Pedido
     
     //otros metodos
     /**
+     * Método que suma todos los precios de los productos pagando al contado (descuento 5%)
      * 
+     * @return la sumatoria de los precios al contado
      */
     public double totalAlContado(){
         
@@ -94,7 +95,9 @@ public class Pedido
     }
     
     /**
+     * Método que suma todos los precio de lista de los productos (con recargo del 12%)
      * 
+     * @return la sumatoria de los precios de lista
      */
     public double totalFinanciado(){
         double acumulador = 0.0;
@@ -107,21 +110,27 @@ public class Pedido
     }
     
     /**
+     * Método para agregar un producto a una colección
+     * @param p_producto el producto que se desea agregar
      * 
-     * 
+     * @return Verdadero si se añade correctamente; De lo contrario, falso.
      */
     public boolean agregarProducto(Producto p_producto){
         return this.getProductos().add(p_producto);
     }
     
     /**
+     * Método para elimitar un producto de una colección
+     * @param p_producto el producto que se desea eliminar
      * 
+     * @return Verdadero si se elimina; De lo contrario, falso.
      */
     public boolean quitarProducto(Producto p_producto){
         return this.getProductos().remove(p_producto);
     }
     
     /**
+     * Método que muestra el lista de productos en formato de ticket
      * 
      */
     public void mostrarPedido(){
