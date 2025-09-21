@@ -6,11 +6,12 @@
  * @author Aguilar Jonathan Alberto
  * @version 1.00
  */
-
+import java.util.*;
 public class Carrera
 {
     public static void main(String[] args){
         //instancia de Curso
+        System.out.println("***Creando curso Electronica...");
         Curso curso1 = new Curso("Electronica");
         
         //instancia de alumnos con sus notas
@@ -27,29 +28,42 @@ public class Carrera
         alumno4.setNota1(5);
         alumno4.setNota2(9);
         
+        ArrayList<Alumno> alumnosCreados = new ArrayList<>();
+        alumnosCreados.add(alumno1);
+        alumnosCreados.add(alumno2);
+        alumnosCreados.add(alumno3);
+        alumnosCreados.add(alumno4);
+        
+        System.out.print("\nListado de alumnos: {");
+        for(Alumno alumno:alumnosCreados){
+            System.out.print(alumno.nomYApe() + ", ");
+        }
+        System.out.print("}\n");        
+        System.out.println("Cantidad de alumnos inscriptos al curso: " + curso1.cantidadDeAlumnos());
+        System.out.println("\nInscribiendo alumnos...");
+        
         //inscripcion de alumnos
-        curso1.inscribirAlumno(alumno1);
-        curso1.inscribirAlumno(alumno2);
-        curso1.inscribirAlumno(alumno3);
-        curso1.inscribirAlumno(alumno4);
-        
+        for(Alumno alumno:alumnosCreados){
+            curso1.inscribirAlumno(alumno);
+        }
+
         //Imprimir la cantidad y la lista de alumnos inscriptos al curso
-        System.out.println("Cantidad de alumnos inscriptos: " + curso1.cantidadDeAlumnos());
         System.out.println();
+        System.out.println("****__Cantidad de inscriptos: " + curso1.cantidadDeAlumnos());
         curso1.mostrarInscriptos();
-        
-        //Dar de baja un alumno del curso, y luego verificar que no esté inscripto
-        curso1.quitarAlumno(alumno1.getLu());
-        System.out.println("El alumno Ramiro Gomez esta inscripto?: " + curso1.estaInscripto(alumno1));
-        
-        //Imprimir nuevamente la lista de alumnos para ver como que queda definitivamente y la cantidad total de 
-        //alumnos inscriptos en el curso
-        System.out.println("Cantidad de alumnos inscriptos: " + curso1.cantidadDeAlumnos());
+        System.out.println("El alumno " + alumno1.apeYNom() + " esta inscripto?: ->" + curso1.estaInscripto(alumno1));
         System.out.println();
+        //Dar de baja un alumno del curso, y luego verificar que no esté inscripto
+        System.out.println("****__Se da de baja a " + alumno1.getNombre() + " porque abandona el curso__****");
+        curso1.quitarAlumno(alumno1.getLu());
+        System.out.println("El alumno " + alumno1.apeYNom() + " esta inscripto?: ->" + curso1.estaInscripto(alumno1));
+        
+        //Imprimir nuevamente la lista de alumnos inscriptos en el curso
+        System.out.println("\n****__Alumnos inscriptos actualmente: " + curso1.cantidadDeAlumnos());
         curso1.mostrarInscriptos();
         
         //Buscar un alumno por su libreta. Una vez encontrado, mostrarlo con el método apropiado.
-        System.out.println("\nBusca y muestra alumno con libreta 12124");
+        System.out.print("****__Busca y muestra alumno con libreta 12124__****");
         curso1.buscarAlumno(12124).mostrar();
         
         //Mostrar el promedio del alumno solicitado, según libreta 

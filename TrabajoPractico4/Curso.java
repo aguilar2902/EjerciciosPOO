@@ -27,7 +27,7 @@ public class Curso
     /**
      * Constructor de Curso con alumnos
      * @param p_nombre nombre del curso
-     * @param p_alumno lista de alumnos (hashmap del Objeto Alumno <lu, alumno>)
+     * @param p_alumno lista de alumnos (hashmap del Objeto Alumno <lu, Alumno>)
      */
     public Curso(String p_nombre,HashMap p_alumnos){
         this.setNombre(p_nombre);
@@ -61,8 +61,6 @@ public class Curso
     /**
      * Método para agregar un alumno a la colección
      * @param p_alumnos datos del alumno (objeto)
-     * 
-     * @return Verdadero si se inscribe; de lo contrario Falso
      */
     public void inscribirAlumno(Alumno p_alumno){
         this.getAlumnos().put(p_alumno.getLu(), p_alumno);
@@ -70,12 +68,12 @@ public class Curso
     
     /**
      * Método para quitar un alumno de la colección
-     * @p_lu clave del elemento alumno (lu)
+     * @p_lu clave del elemento alumno (libreta universitaria)
      * 
      * @return alumno que fue eliminado de la colección (Objeto)
      */
     public Alumno quitarAlumno(int p_lu){
-        Alumno aux = (Alumno)this.getAlumnos().get(p_lu);
+        Alumno aux = this.getAlumnos().get(p_lu);
         this.getAlumnos().remove(p_lu);
         return aux;
     }
@@ -122,12 +120,12 @@ public class Curso
      * @return datos del alumno buscado (objeto)
      */
     public Alumno buscarAlumno(int p_lu){
-        return (Alumno)this.getAlumnos().get(p_lu);
+        return this.getAlumnos().get(p_lu);
     }
     
     /**
      * Método que imprime el promedio del alumno
-     * @param p_lu lu del alumno a mostrar (clave)
+     * @param p_lu libreta universitaria del alumno a mostrar (clave)
      */
     public void imprimirPromedioDelAlumno(int p_lu){
         System.out.println("****__Mostrar promedio del alumno " + this.buscarAlumno(p_lu).getLu() +
@@ -139,11 +137,11 @@ public class Curso
      * Método para informar la cantdad de inscriptos en el curso
      */
     public void mostrarInscriptos(){
-        System.out.println("****__Cantidad de inscriptos: " + this.cantidadDeAlumnos());
         for(Integer lu : this.getAlumnos().keySet()){
             Alumno alumno = this.getAlumnos().get(lu);
             System.out.println(alumno.getLu() + " " + alumno.nomYApe());
             
         }
+        System.out.println();
     }
 }

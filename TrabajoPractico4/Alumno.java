@@ -23,9 +23,9 @@ public class Alumno
    * @param p_apellido Apellido del alumno
    */
   public Alumno(int p_lu, String p_nombre, String p_apellido){
-    setLu(p_lu);
-    setNombre(p_nombre);
-    setApellido(p_apellido);
+    this.setLu(p_lu);
+    this.setNombre(p_nombre);
+    this.setApellido(p_apellido);
   }
   //Mutadores/Setters
   /**
@@ -33,35 +33,35 @@ public class Alumno
    * @param p_lu libreta universitaria del alumno como entero
    */
   private void setLu(int p_lu){
-    lu = p_lu;
+    this.lu = p_lu;
   }
   /**
    * Mutador privado para el nombre del alumno
    * @param p_nombre nombre del alumno
    */
   private void setNombre(String p_nombre){
-    nombre = p_nombre;
+    this.nombre = p_nombre;
   }
   /**
    * Mutador privado para el apellido del alumno
    * @param p_apellido apellido del alumno
    */
   private void setApellido(String p_apellido){
-    apellido = p_apellido;
+    this.apellido = p_apellido;
   }
   /**
    * Mutador público para la nota 1
    * @param p_nota nota1 del alumno
    */
   public void setNota1(double p_nota){
-    nota1 = p_nota;
+    this.nota1 = p_nota;
   }
   /**
    * Mutador público para la nota 2
    * @param p_nota nota2 del alumno
    */
   public void setNota2(double p_nota){
-    nota2 = p_nota;
+    this.nota2 = p_nota;
   }
   //Observadores/Getters (públicos)
   /**
@@ -69,35 +69,35 @@ public class Alumno
    * @return el número de libreta del alumno
    */
   public int getLu(){
-    return lu;
+    return this.lu;
   }
   /**
    * Observador para el nombre del alumno
    * @return el nombre del alumno
    */
   public String getNombre(){
-    return nombre;
+    return this.nombre;
   }
   /**
    * Observador para el apellido del alumno
    * @return el apellido del alumno
    */
   public String getApellido(){
-    return apellido;
+    return this.apellido;
   }
   /**
    * Observador para la nota 1 del alumno
    * @return la nota1 del alumno
    */
   public double getNota1(){
-    return nota1;
+    return this.nota1;
   }
   /**
    * Observador para la nota 2 del alumno
    * @return la nota2 del alumno
    */
   public double getNota2(){
-    return nota2;
+    return this.nota2;
   }
   //Otros métodos
   /**
@@ -106,7 +106,7 @@ public class Alumno
    * @return el promedio de las notas
    */
   public double promedio(){
-    return (getNota1() + getNota2())/2;
+    return (this.getNota1() + this.getNota2())/2;
   }
   /**
    * Método privado que evalua si el alumno cumplió
@@ -116,7 +116,7 @@ public class Alumno
    * de los criterios.
    */
   private boolean aprueba(){
-    if((getNota1()>= 6.0) && (getNota2()>=6.0) && (promedio()>7.0)){
+    if((this.getNota1()>= 6.0) && (this.getNota2()>=6.0) && (this.promedio()>7.0)){
       return true;
     }
       return false;
@@ -129,7 +129,7 @@ public class Alumno
    * o "DESAPROBADO" según el caso.
    */
   private String leyendaAprueba(){
-    if(aprueba()){
+    if(this.aprueba()){
       return "APROBADO";
     } else {
       return "DESAPROBADO";
@@ -140,14 +140,14 @@ public class Alumno
    * @return una cadena de texto en formato "[nombre] [apellido]"
    */
   public String nomYApe(){
-    return getNombre() + " " + getApellido();
+    return this.getNombre() + " " + this.getApellido();
   }
   /**
    * Método público para el apellido y nombre del alumno
    * @return una cadena de texto en formato "[apellido] [nombre]"
    */
   public String apeYNom(){
-    return getApellido() + " " + getNombre();
+    return this.getApellido() + " " + this.getNombre();
   }
   /**
    * Método público que imprime en pantalla datos de un alumno
@@ -158,9 +158,9 @@ public class Alumno
    */
   public void mostrar(){
     System.out.println("\nNombre y Apellido: " + nomYApe());
-    System.out.println("LU: " + getLu() + "  Notas: " + getNota1() + 
+    System.out.println("LU: " + this.getLu() + "  Notas: " + this.getNota1() + 
       "-" + getNota2());
-    System.out.println("Promedio: " + promedio() + " - " + leyendaAprueba());
+    System.out.println("Promedio: " + this.promedio() + " - " + this.leyendaAprueba());
     System.out.println();
   }
 }
