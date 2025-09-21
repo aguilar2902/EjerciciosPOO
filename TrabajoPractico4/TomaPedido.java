@@ -20,11 +20,12 @@ public class TomaPedido
         //creo un laboratorio cualquiera
         Laboratorio lab = new Laboratorio("Corrientes tech", "cualquiera 1775", "2284304032");
         //Creo 5 productos de prueba
-        Producto prod1 = new Producto(1, "Tecnologia", "Notebook", 800000.00, lab);
-        Producto prod2 = new Producto(1, "Tecnologia", "Mouse gamer", 15000.00, lab);
-        Producto prod3 = new Producto(1, "Tecnologia", "Teclado", 35000.00, lab);
-        Producto prod4 = new Producto(1, "Tecnologia", "Pendrive", 10857.00, lab);
-        Producto prod5 = new Producto(1, "Tecnologia", "Libro-POO", 10450.00, lab);
+        Producto prod1 = new Producto(1234, "Tecnologia", "Notebook", 800000.00, lab);
+        Producto prod2 = new Producto(2222, "Tecnologia", "Mouse gamer", 15000.00, lab);
+        Producto prod3 = new Producto(3232, "Tecnologia", "Teclado", 35000.00, lab);
+        Producto prod4 = new Producto(6654, "Tecnologia", "Pendrive", 10857.00, lab);
+        Producto prod5 = new Producto(6654, "Tecnologia", "Pendrive", 10857.00, lab);
+        Producto prod6 = new Producto(9893, "Tecnologia", "Libro-POO", 10450.00, lab);
         
         ArrayList<Producto> listaProductos = new ArrayList<>();
         listaProductos.add(prod1);

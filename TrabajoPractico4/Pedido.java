@@ -145,6 +145,6 @@ public class Pedido
            System.out.printf("\t %-14s \t%6.2f \t%6.2f%n", prod.getDescripcion(), prod.precioLista(), prod.precioContado());
        }
        System.out.println("\t------------------------------------------");
-       System.out.println("\t*** Total---\t" + this.totalFinanciado() + "\t" + this.totalAlContado());
+       System.out.printf("\t*** Total--- \t%6.2f \t%6.2f%n", this.totalFinanciado(), this.totalAlContado());
    }
 }
