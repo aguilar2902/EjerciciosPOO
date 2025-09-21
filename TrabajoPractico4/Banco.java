@@ -1,6 +1,6 @@
  
 /**
- * Ejercicio 3: Implementación de la clase Banco
+ * Ejercicio 3 y 4: Implementación de la clase Banco
  * 
  * @author Bengochea Marcelo José De Jesús
  * @author Aguilar Jonathan Alberto
@@ -36,12 +36,12 @@ public class Banco
     }
     
     /**
-     * Constructor de Banco con varios empleados
+     * Constructor de Banco que recibe una lista de empleados
      * 
      * @param p_nombre nombre del banco
      * @param p_localidad localidad donde se encuentra (objeto)
      * @param p_nroSucursal número de sucursal
-     * @param p_empleados lista de empleados a registrar (arraylist del objeto Empleado)
+     * @param p_empleados lista de empleados a registrar (ArrayList)
      */
     public Banco(String p_nombre, Localidad p_localidad, int p_nroSucursal, ArrayList<Empleado> p_empleados){
         this.setNombre(p_nombre);
@@ -100,7 +100,7 @@ public class Banco
     
     //observadores
     /**
-     * Observador para el atributo nombre (mostrar)
+     * Observador para el atributo nombre
      * @return nombre del banco
      */
     public String getNombre(){
@@ -151,7 +151,7 @@ public class Banco
      * Metodo que lista todos los empleados (cuil - nomYApe - sueldo)
      */
     public void listarSueldos(){
-        for(Empleado emp: empleados){
+        for(Empleado emp: this.getEmpleados()){
             System.out.println("\t"+ emp.getCuil() + "  "+ emp.nomYApe() + 
                                "------------------------ $" + emp.sueldoNeto());
         }
@@ -165,7 +165,7 @@ public class Banco
     public double sueldosAPagar(){
         double total = 0.0;
         
-        for(Empleado emp: empleados){
+        for(Empleado emp: this.getEmpleados()){
             total += emp.sueldoNeto();
         }
         
@@ -176,11 +176,14 @@ public class Banco
      * Metodo que muestra los datos del banco, lista de empleados y el total a pagar de los sueldos.
      */
     public void mostrar(){
+        System.out.println("\n\t" + "=".repeat(70));
         System.out.println("\tBanco: " + this.getNombre() + "    Sucursal: " + this.getNroSucursal());
         System.out.println("\tLocalidad: " + this.getLocalidad().getNombre() + "    Provincia: " + this.getLocalidad().getProvincia());
         System.out.println();
         this.listarSueldos();
         System.out.println("\n\tTotal a Pagar------------------------------------------------ $" + this.sueldosAPagar());
+        System.out.println("\t" + "=".repeat(70));
+        System.out.println();
     }
     
     /**
@@ -209,11 +212,11 @@ public class Banco
      */
     public void listaCuentasConSaldoCero(){
         System.out.println("\tCuentas sin saldo:");
-        System.out.println("\t--- Cuenta -------------------- Apellido y Nombre ---------------");
+        System.out.println("\t--- Cuenta ------------- Apellido y Nombre ---------------");
         
-        for (CuentaBancaria a: cuentasBancarias){
-            if(a.getSaldo() == 0.00){
-                System.out.println("\t " + a.getNroCuenta() + "\t\t\t" + a.getTitular().apeYNom());
+        for (CuentaBancaria cuentaBancaria: this.getCuentasBancarias()){
+            if(cuentaBancaria.getSaldo() == 0.00){
+                System.out.println("\t " + cuentaBancaria.getNroCuenta() + "\t\t\t" + cuentaBancaria.getTitular().apeYNom());
             }
         }
     }
@@ -226,8 +229,8 @@ public class Banco
     public HashSet<Persona> listaDeTitulares(){
         HashSet<Persona> lista = new HashSet<>();
         
-        for(CuentaBancaria a: cuentasBancarias){
-            lista.add(a.getTitular());
+        for(CuentaBancaria cuentaBancaria : this.getCuentasBancarias()){
+            lista.add(cuentaBancaria.getTitular());
         }
         
         return lista;
@@ -241,8 +244,8 @@ public class Banco
     private int cuentasSaldoActivo(){
         int contador = 0;
         
-        for (CuentaBancaria a: cuentasBancarias){
-            if(a.getSaldo() > 0.00){
+        for (CuentaBancaria cuentaBancaria : this.getCuentasBancarias()){
+            if(cuentaBancaria.getSaldo() > 0.00){
                 contador++;
             }
         }
@@ -256,7 +259,7 @@ public class Banco
      */
     public void mostrarResumen(){
         int cont = 0;
-        System.out.println("\tBanco: " + this.getNombre() + "    Sucursal: " + this.getNroSucursal());
+        System.out.println("\n\tBanco: " + this.getNombre() + "    Sucursal: " + this.getNroSucursal());
         System.out.println("\tLocalidad: " + this.getLocalidad().getNombre() + "    Provincia: " + this.getLocalidad().getProvincia());
         System.out.println("\t************************************************************");
         System.out.println("\tRESUMEN DE CUENTAS BANCARIAS");
@@ -265,8 +268,8 @@ public class Banco
         System.out.println("\tCuentas Activas: " + this.cuentasSaldoActivo());
         
         
-        for (CuentaBancaria a: cuentasBancarias){
-            if(a.getSaldo() == 0.00){
+        for (CuentaBancaria cuentaBancaria : this.getCuentasBancarias()){
+            if(cuentaBancaria.getSaldo() == 0.00){
                 cont++;
             }
         }
@@ -280,6 +283,6 @@ public class Banco
         for(Persona p: this.listaDeTitulares()){
             System.out.print(p.nomYApe() + "; ");
         }  
-        System.out.println("\n\t------------------------------------------------------------");
+        System.out.println("\n\t------------------------------------------------------------\n");
     }
 }

@@ -14,7 +14,7 @@ public class AplicacionBanco
         
         Calendar fecha = Calendar.getInstance();
         
-       //creo 5 empleados de prueba - 2 con años y 3 con fechas
+       //creo 5 empleados de prueba: 2 con años y 3 con fechas
        Empleado emp1 = new Empleado(123456789, "Ramirez", "Ruperto", 1750.0, 1992);
        Empleado emp2 = new Empleado(123456788, "Rodriguez", "Lucrecia", 2250.0, 1994);
        
@@ -38,22 +38,23 @@ public class AplicacionBanco
        Persona titular4 = new Persona(31234693, "Daniela", "Quintana", 1978);
        
        //pruebas del banco1 
-       System.out.println("\n\t ***** PRUEBAS DEL BANCO 1 (con un empleado) ***** \n\n");
+       System.out.println("\n\t ***** PRUEBAS DEL BANCO 1 (con un empleado al inicio) ***** \n\n");
        Banco banco1 = new Banco("Santander", loc1, 1, emp1 );
        banco1.mostrar();
+       System.out.println("\t*** Agregando 2 empleados más... ***");
        banco1.agregarEmpleado(emp2);
        banco1.agregarEmpleado(emp3);
        banco1.mostrar();
-       System.out.println();
+       System.out.println("\t*** Quitando el 1er empleado ***");
        banco1.quitarEmpleado(emp1);
        banco1.mostrar();
-       System.out.println();
+       System.out.println("\n\tListando sueldos a pagar...");
        banco1.listarSueldos();
-       System.out.println(banco1.sueldosAPagar());
+       System.out.println("\n\t*** Monto total a pagar en concepto de sueldos: $" + banco1.sueldosAPagar());
        
        //pruebas del banco 2
-       
-       System.out.println("\n\t ***** PRUEBAS DEL BANCO 2 (Con varios empleados) ***** \n\n");
+       System.out.println("\n\t-----------------------------------");
+       System.out.println("\t ***** PRUEBAS DEL BANCO 2 (Con varios empleados en el constructor) ***** \n\n");
        ArrayList<Empleado> listaEmp = new ArrayList<>();
        listaEmp.add(emp1);
        listaEmp.add(emp3);
@@ -62,19 +63,21 @@ public class AplicacionBanco
        
        Banco banco2 = new Banco("RIO", loc2, 2, listaEmp);
        banco2.mostrar();
+       System.out.println("\t*** Agregando nuevo empleado... ***");
        banco2.agregarEmpleado(emp2);
        System.out.println();
        banco2.mostrar();
-       System.out.println();
+       System.out.println("\t*** Quitando un empleado ***");
        banco2.quitarEmpleado(emp5);
        banco2.mostrar();
        
         //pruebas banco 3
+        System.out.println("\n\t-----------------------------------");
         System.out.println("\n\t ******* PRUEBA EJERCICIO 4 ******* ");
         System.out.println("\n\t ***** PRUEBAS DEL BANCO 3 (Con varios empleados y varias cuentas) ***** \n\n");
         
         //cuentas bancarias (3 sin saldo y 3 con saldo)
-        CuentaBancaria cta1 = new CuentaBancaria(001, titular1);
+        CuentaBancaria cta1 = new CuentaBancaria(333, titular1);
         CuentaBancaria cta2 = new CuentaBancaria(002, titular1);
         CuentaBancaria cta3 = new CuentaBancaria(003, titular3);
         CuentaBancaria cta4 = new CuentaBancaria(004, titular1, 1500);
@@ -89,11 +92,12 @@ public class AplicacionBanco
         
         Banco banco3 = new Banco("BBVA", loc1, 3, listaEmp ,listaCuentas);
         banco3.mostrarResumen();
+        System.out.println("\t*** Agregando más cuentas bancarias... ***");
         banco3.agregarCuentaBancaria(cta5);
         banco3.agregarCuentaBancaria(cta6);
         System.out.println();
         banco3.mostrarResumen();
-        System.out.println();
+        System.out.println("\t*** Quitando una cuenta bancaria... ***");
         banco3.quitarCuentaBancaria(cta1);
         banco3.mostrarResumen();
     }
