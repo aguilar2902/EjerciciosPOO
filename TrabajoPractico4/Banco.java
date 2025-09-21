@@ -264,8 +264,9 @@ public class Banco
         System.out.println("\tNumero total de Cuentas Bancarias: " + this.getCuentasBancarias().size());
         System.out.println("\tCuentas Activas: " + this.cuentasSaldoActivo());
         
+        
         for (CuentaBancaria a: cuentasBancarias){
-            if(a.getSaldo() > 0.00){
+            if(a.getSaldo() == 0.00){
                 cont++;
             }
         }

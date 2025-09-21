@@ -27,9 +27,15 @@ public class AplicacionBanco
        fecha.set(1989, Calendar.APRIL, 25);
        Empleado emp5 = new Empleado(123456788, "Casimiro", "Humberto", 8490.0, fecha);
        
-       
+       // creo 2 localidades
        Localidad loc1 = new Localidad("Goya", "Corrientes");
        Localidad loc2 = new Localidad("Mercedes", "Corrientes");
+       
+       // creo 4 titulares para cuentas bancarias
+       Persona titular1 = new Persona(38886793, "Jeremias", "Iniesta", 1995);
+       Persona titular2 = new Persona(33575793, "Josias", "Ledesma", 1946);
+       Persona titular3 = new Persona(38867463, "Mayra", "Ramos", 1975);
+       Persona titular4 = new Persona(31234693, "Daniela", "Quintana", 1978);
        
        //pruebas del banco1 
        System.out.println("\n\t ***** PRUEBAS DEL BANCO 1 (con un empleado) ***** \n\n");
@@ -62,9 +68,35 @@ public class AplicacionBanco
        System.out.println();
        banco2.quitarEmpleado(emp5);
        banco2.mostrar();
+       
+        //pruebas banco 3
+        System.out.println("\n\t ******* PRUEBA EJERCICIO 4 ******* ");
+        System.out.println("\n\t ***** PRUEBAS DEL BANCO 3 (Con varios empleados y varias cuentas) ***** \n\n");
+        
+        //cuentas bancarias (3 sin saldo y 3 con saldo)
+        CuentaBancaria cta1 = new CuentaBancaria(001, titular1);
+        CuentaBancaria cta2 = new CuentaBancaria(002, titular1);
+        CuentaBancaria cta3 = new CuentaBancaria(003, titular3);
+        CuentaBancaria cta4 = new CuentaBancaria(004, titular1, 1500);
+        CuentaBancaria cta5 = new CuentaBancaria(005, titular2, 3670);
+        CuentaBancaria cta6 = new CuentaBancaria(006, titular4, 15000);
+        
+        ArrayList<CuentaBancaria> listaCuentas = new ArrayList<>();
+        listaCuentas.add(cta1);
+        listaCuentas.add(cta2);
+        listaCuentas.add(cta3);
+        listaCuentas.add(cta4);
+        
+        Banco banco3 = new Banco("BBVA", loc1, 3, listaEmp ,listaCuentas);
+        banco3.mostrarResumen();
+        banco3.agregarCuentaBancaria(cta5);
+        banco3.agregarCuentaBancaria(cta6);
+        System.out.println();
+        banco3.mostrarResumen();
+        System.out.println();
+        banco3.quitarCuentaBancaria(cta1);
+        banco3.mostrarResumen();
     }
 
-    
-    
-    
+   
 }
