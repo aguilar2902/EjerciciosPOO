@@ -64,7 +64,7 @@ public class Comercio
      * Método para agregar un empleado a la colección
      * @p_empleado Datos del empleado (Objeto)
      */
-    public void altaEmpleadoo(Empleado p_empleado){
+    public void altaEmpleado(Empleado p_empleado){
         this.getEmpleados().put(p_empleado.getCuil(), p_empleado);
     }
     
@@ -122,10 +122,10 @@ public class Comercio
      * Muestra la lista de empleados con el siguiente formato (cuil - nomYApe - sueldo neto)
      */
     public void nomina(){
-        System.out.println("\t****Nomina de empleados de " + this.getNombre() + " ****");
+        System.out.println("\t**** Nomina de empleados de " + this.getNombre() + " ****");
         for(Long clave: this.getEmpleados().keySet()){
             Empleado emp = this.buscarEmpleado(clave);
-            System.out.print("\n\t" + emp.getCuil() + " " + emp.nomYApe() + "-----");
+            System.out.print("\t" + emp.getCuil() + " " + emp.nomYApe() + "-----");
             this.sueldoNeto(clave);
         }
     }

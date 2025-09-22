@@ -2,4 +2,6 @@
 comment0.target=GestionComercio
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment2.params=p_scanner\ p_comercio\ p_empleados
+comment2.target=void\ menu(java.util.Scanner,\ Comercio,\ java.util.ArrayList)
+numComments=3
