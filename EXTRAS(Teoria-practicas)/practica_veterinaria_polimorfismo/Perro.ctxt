@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Perro
+comment0.text=\n\ Write\ a\ description\ of\ class\ Perro\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=p_nombre\ p_edad\ p_costo
+comment1.target=Perro(java.lang.String,\ int,\ double)
+comment2.params=
+comment2.target=java.lang.String\ emitirSonido()
+comment3.params=
+comment3.target=java.lang.String\ queAnimal()
+comment4.params=
+comment4.target=double\ precioVenta()
+numComments=5

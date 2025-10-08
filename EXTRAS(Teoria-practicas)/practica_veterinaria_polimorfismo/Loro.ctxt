@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Loro
+comment0.text=\n\ Write\ a\ description\ of\ class\ Loro\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=p_nombre\ p_edad\ p_costo
+comment1.target=Loro(java.lang.String,\ int,\ double)
+comment2.params=p_nombre\ p_edad\ p_costo\ p_habla
+comment2.target=Loro(java.lang.String,\ int,\ double,\ boolean)
+comment3.params=p_habla
+comment3.target=void\ setHabla(boolean)
+comment4.params=
+comment4.target=boolean\ getHabla()
+comment5.params=
+comment5.target=java.lang.String\ emitirSonido()
+comment6.params=
+comment6.target=java.lang.String\ queAnimal()
+comment7.params=
+comment7.target=double\ precioVenta()
+numComments=8
