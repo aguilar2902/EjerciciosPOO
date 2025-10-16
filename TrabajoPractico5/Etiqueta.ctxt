@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Etiqueta
+comment0.text=\r\n\ Creaci\u00F3n\ de\ la\ Clase\ Abstracta\ Etiqueta\r\n\ \r\n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\r\n\ @author\ Aguilar\ Jonathan\ Alberto\ \r\n\ @version\ 1.00\ 18-10-25\r\n
+comment1.params=p_costo
+comment1.target=Etiqueta(double)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Etiqueta\r\n\ \r\n\ @param\ p_costo\ costo\ de\ la\ etiqueta\r\n
+comment2.params=p_costo
+comment2.target=void\ setCosto(double)
+comment2.text=\r\n\ Mutador\ privado\ para\ el\ costo\ de\ Etiqueta\r\n\ \r\n\ @param\ p_costo\ costo\ de\ la\ etiqueta\r\n
+comment3.params=
+comment3.target=double\ getCosto()
+comment3.text=\r\n\ Observador\ para\ el\ costo\r\n\ \r\n\ @return\ costo\ de\ la\ etiqueta\r\n
+comment4.params=q
+comment4.target=double\ precio(int)
+comment4.text=\r\n\ Metodo\ abstracto\ para\ calcular\ precio\r\n\ \r\n\ @param\ q\ cantidad\ de\ etiquetas\ pedidas\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ Metodo\ que\ devuelve\ el\ objeto\ en\ forma\ de\ String\r\n\ \r\n\ @return\ cadena\ con\ el\ formato\ "tipo\ -\ costo"\r\n
+comment6.params=
+comment6.target=java.lang.String\ tipo()
+comment6.text=\r\n\ Metodo\ abstracto\ para\ saber\ el\ tipo\ de\ etiqueta\ pedido\r\n
+numComments=7
