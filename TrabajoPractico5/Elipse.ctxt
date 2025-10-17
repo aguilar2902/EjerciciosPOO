@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Elipse
+comment0.text=\r\n\ Creacion\ de\ la\ Clase\ Elipse\r\n\ \r\n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\r\n\ @author\ Aguilar\ Jonathan\ Alberto\r\n\ @version\ 1.00\r\n
+comment1.params=p_x\ p_y\ p_menor\ p_mayor
+comment1.target=Elipse(double,\ double,\ double,\ double)
+comment10.params=
+comment10.target=void\ mostrarSuperficie()
+comment2.params=p_menor\ p_mayor
+comment2.target=Elipse(double,\ double)
+comment3.params=p_menor
+comment3.target=void\ setRadioMenor(double)
+comment4.params=p_mayor
+comment4.target=void\ setRadioMayor(double)
+comment5.params=
+comment5.target=double\ getRadioMenor()
+comment6.params=
+comment6.target=double\ getRadioMayor()
+comment7.params=p_dx\ p_dy
+comment7.target=void\ desplazar(double,\ double)
+comment7.text=\r\n\ Desplaza\ el\ punto\ que\ representa\ el\ centro\ de\ la\ figura\r\n
+comment8.params=
+comment8.target=java.lang.String\ nombreFigura()
+comment9.params=
+comment9.target=double\ superficie()
+numComments=11

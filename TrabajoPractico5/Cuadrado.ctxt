@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Cuadrado
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Cuadrado\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=p_x\ p_y\ p_ancho
+comment1.target=Cuadrado(int,\ int,\ double)
+comment2.params=p_ancho
+comment2.target=Cuadrado(double)
+comment3.params=
+comment3.target=java.lang.String\ nombreFigura()
+comment4.params=
+comment4.target=double\ superficie()
+comment5.params=
+comment5.target=void\ mostrarSuperficie()
+numComments=6
