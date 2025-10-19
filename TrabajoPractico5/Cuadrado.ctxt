@@ -1,14 +1,16 @@
 #BlueJ class context
 comment0.target=Cuadrado
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Cuadrado\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=p_x\ p_y\ p_ancho
+comment0.text=\n\ Implementaci\u00F3n\ de\ Clase\ Cuadrado\n\ \n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\n\ @author\ Aguilar\ Jonathan\ Alberto\n\ @version\ 1.00\n
+comment1.params=p_x\ p_y\ p_lado
 comment1.target=Cuadrado(int,\ int,\ double)
-comment2.params=p_ancho
+comment1.text=\n\ Constructor\ para\ un\ Cuadrado\ con\ origen\ distinto\ a\ (0,0)\n\ @param\ p_x\ coordenada\ x\ del\ punto\n\ @param\ p_y\ coordenada\ y\ del\ punto\n\ @param\ p_lado\ valor\ del\ lado\n
+comment2.params=p_lado
 comment2.target=Cuadrado(double)
+comment2.text=\n\ Constructor\ para\ un\ Cuadrado\ con\ origen\ en\ (0,0)\n\ @param\ p_lado\ valor\ del\ lado\n
 comment3.params=
-comment3.target=java.lang.String\ nombreFigura()
+comment3.target=void\ caracteristicas()
+comment3.text=\n\ Muestra\ las\ caracter\u00EDsticas\ del\ Cuadrado(Origen,\ Lado,\ Superficie\ y\ Per\u00EDmetro)\n
 comment4.params=
-comment4.target=double\ superficie()
-comment5.params=
-comment5.target=void\ mostrarSuperficie()
-numComments=6
+comment4.target=java.lang.String\ nombreFigura()
+comment4.text=\n\ Obtiene\ el\ nombre\ de\ la\ figura\n\ @return\ cadena\ de\ texto\ con\ la\ leyenda\ Cuadrado\n
+numComments=5

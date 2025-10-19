@@ -13,7 +13,8 @@ public class Rectangulo extends FiguraGeometrica
     
     /**
      * Constructor para un rectángulo con un punto "p" de origen enviado por el usuario
-     * @param p_origen el punto que será el origen
+     * @param p_x coordenada x del punto origen
+     * @param p_y coordenada y del punto origen
      * @param p_ancho el valor correspondiente al ancho del rectángulo
      * @param p_alto el valor que representa la altura del rectángulo
      */
@@ -33,7 +34,10 @@ public class Rectangulo extends FiguraGeometrica
         this.setAlto(p_alto);
     }
     //Mutadores
-
+    /**
+     * Mutador para el ancho del rectángulo
+     * @param p_ancho medida del ancho
+     */
     private void setAncho(double p_ancho){
         this.ancho = p_ancho;
     }
@@ -41,7 +45,9 @@ public class Rectangulo extends FiguraGeometrica
         this. alto = p_alto;
     }
     //Observadores
-
+    /**
+     * @return el valor del ancho del rectángulo
+     */
     public double getAncho(){
         return this.ancho;
     }
@@ -62,7 +68,7 @@ public class Rectangulo extends FiguraGeometrica
      * Muestra las características del rectángulo(Origen, Alto, Ancho, Superficie y Perímetro)
      */
     public void caracteristicas(){
-        System.out.println("\n\t****** Rectangulo ******");
+        this.nombreFigura();
         System.out.println("\tOrigen: " + this.getOrigen().coordenadas() + " - Alto: " + this.getAlto() +
             " - Ancho: " + this.getAncho());
         System.out.println("\tSuperficie: " + this.superficie() + " - Perímetro: " + this.perimetro());
@@ -101,13 +107,11 @@ public class Rectangulo extends FiguraGeometrica
             return otroRectangulo;
         }
     }
-    
+    /**
+     * Obtiene el nombre de la figura
+     * @return cadena de texto con la leyenda Rectángulo
+     */
     public String nombreFigura(){
         return "\t****** Rectángulo ****** ";
-    }
-    
-    public void mostrarSuperficie(){
-        System.out.println(this.nombreFigura());
-        System.out.println("\tSuperficie: " + this.superficie());
     }
 }
