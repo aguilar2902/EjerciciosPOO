@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Administracion
-comment0.text=\n\ Creacion\ de\ la\ clase\ ejecutable\ Administracion\n\ \n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\n\ @author\ Aguilar\ Jonathan\ Alberto\n
+comment0.text=\r\n\ Creacion\ de\ la\ clase\ ejecutable\ Administracion\r\n\ \r\n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\r\n\ @author\ Aguilar\ Jonathan\ Alberto\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2

@@ -1,16 +1,16 @@
 #BlueJ class context
 comment0.target=SemiExclusivo
-comment0.text=\n\ Implementaci\u00F3n\ de\ la\ subclase\ SemiExclusivo.\n\ \n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\n\ @author\ Aguilar\ Jonathan\ Alberto\n
+comment0.text=\r\n\ Implementaci\u00F3n\ de\ la\ subclase\ SemiExclusivo.\r\n\ \r\n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\r\n\ @author\ Aguilar\ Jonathan\ Alberto\r\n
 comment1.params=p_nombre\ p_sueldo\ p_anio\ p_horasInv
 comment1.target=SemiExclusivo(java.lang.String,\ double,\ int,\ int)
-comment1.text=\n\ Constructor\ de\ objetos\ SemiExclusivo\n\ @param\ p_nombre\ nombre\ del\ cargo\n\ @param\ p_sueldo\ sueldo\ del\ cargo\n\ @param\ p_anio\ a\u00F1o\ de\ ingreso\ al\ cargo\n\ @param\ p_horasInv\ hs\ dedicadas\ a\ investigaci\u00F3n\n\ @throws\ IllegalArgumentException\ si\ las\ horas\ de\ investigaci\u00F3n\ son\ menores\ a\ 0\ o\ mayores\ a\ 10.\n
+comment1.text=\r\n\ Constructor\ de\ objetos\ SemiExclusivo\r\n\ @param\ p_nombre\ nombre\ del\ cargo\r\n\ @param\ p_sueldo\ sueldo\ del\ cargo\r\n\ @param\ p_anio\ a\u00F1o\ de\ ingreso\ al\ cargo\r\n\ @param\ p_horasInv\ hs\ dedicadas\ a\ investigaci\u00F3n\r\n\ @throws\ IllegalArgumentException\ si\ las\ horas\ de\ investigaci\u00F3n\ son\ menores\ a\ 0\ o\ mayores\ a\ 10.\r\n
 comment2.params=p_horasInv
 comment2.target=void\ setHorasDeInvestigacion(int)
-comment2.text=\n\ Agrega\ las\ hs\ que\ corresponde\ a\ investigaci\u00F3n\n\ @param\ p_horasInv\ hs\ a\ asignar\ para\ investigaci\u00F3n\n
+comment2.text=\r\n\ Agrega\ las\ hs\ que\ corresponde\ a\ investigaci\u00F3n\r\n\ @param\ p_horasInv\ hs\ a\ asignar\ para\ investigaci\u00F3n\r\n
 comment3.params=
 comment3.target=int\ getHorasDeInvestigacion()
-comment3.text=\n\ @return\ la\ cantidad\ de\ hs\ asignadas\ a\ investigaci\u00F3n.\n
+comment3.text=\r\n\ @return\ la\ cantidad\ de\ hs\ asignadas\ a\ investigaci\u00F3n.\r\n
 comment4.params=
 comment4.target=void\ mostrarCargo()
-comment4.text=\n\ Muestra\ por\ pantalla\ los\ detalles\ del\ cargo\ Semiexlusivo\n
+comment4.text=\r\n\ Muestra\ por\ pantalla\ los\ detalles\ del\ cargo\ Semiexlusivo\r\n
 numComments=5
