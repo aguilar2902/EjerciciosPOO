@@ -34,13 +34,11 @@ public class CuentaCorriente extends CuentaBancaria
     }
     
     //Mutadores
-    
     private void setLimiteDescubierto(double p_limite){
         this.limiteDescubierto = p_limite;
     }
     
     //Observadores
-
     public double getLimiteDescubierto(){
         return this.limiteDescubierto;
     }
@@ -53,7 +51,8 @@ public class CuentaCorriente extends CuentaBancaria
      * @return un booleano que define si se cumplen las condiciones
      */
     private boolean puedeExtraer(double p_importe){
-        if(p_importe <= (this.getSaldo() + this.getLimiteDescubierto())){
+        
+        if(p_importe <= this.getSaldo() || p_importe <= (this.getLimiteDescubierto() + this.getSaldo()) || p_importe <= this.getLimiteDescubierto() ){
             return true;
         }else{
             return false;
@@ -66,12 +65,16 @@ public class CuentaCorriente extends CuentaBancaria
      * @return si se llevó a cabo exitosamente (booleano)
      */
     public boolean extraer(double p_importe){
-        if(this.puedeExtraer(p_importe)){
+        if(this.puedeExtraer(p_importe) && p_importe <= this.getSaldo()){    
             return super.extraer(p_importe);
-        }else{
-            System.out.println(this.xQNoPuedoExtraer(p_importe));
-            return false;
+        } else if (this.puedeExtraer(p_importe) && p_importe > this.getSaldo()){
+            boolean aux = super.extraer(p_importe);
+            this.setLimiteDescubierto(500 - Math.abs(this.getSaldo()));
+            return aux;
         }
+        
+        System.out.println(this.xQNoPuedoExtraer(p_importe));
+        return false;
     }
     
     public String xQNoPuedoExtraer(double p_importe){
