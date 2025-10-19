@@ -45,55 +45,69 @@ public class Cargo
         this.setHorasDeDocencia(p_horas);
     }
     
-    //Accessors
+    //Mutadores
+    /**
+     * Asigna el nombre del cargo
+     * @param p_nombreCargo representa el nombre a asignar
+     */
     private void setNombreCargo(String p_nombreCargo){
         this.nombreCargo = p_nombreCargo;
     }
-    
     private void setSueldoBasico(double p_sueldo){
         this.sueldoBasico = p_sueldo;
     }
-    
     private void setAnioIngreso(int p_anioIngreso){
         this.anioIngreso = p_anioIngreso;
     }
-    
     private void setHorasDeDocencia(int p_horas){
         this.horasDeDocencia = p_horas;
     }
-    
+    //Observadores
+    /**
+     * Obtiene el nombre asignado al cargo
+     * @return nombre del cargo
+     */
     public String getNombreCargo(){
         return this.nombreCargo;
     }
-    
     public double getSueldoBasico(){
         return this.sueldoBasico;
     }
-    
     public int getAnioIngreso(){
         return this.anioIngreso;
     }
-    
     public int getHorasDeDocencia(){
         return this.horasDeDocencia;
-    }
-    
+    } 
     //Otros métodos
+    /**
+     * Obtiene la antigüedad del cargo
+     * @return la cantidad de años ejercidos en el cargo
+     */
     public int antiguedad(){
         Calendar fechaHoy = new GregorianCalendar();
         int anioActual = fechaHoy.get(Calendar.YEAR);
         
         return anioActual - this.getAnioIngreso();
     }
-    
+    /**
+     * Obtiene el adicional que corresponde, de acuerdo a los años de
+     * antigüedad en el cargo y el sueldo básico.
+     * @return el monto que corresponde al adicional
+     */
     private double adicionalXAntiguedad(){ 
         return this.getSueldoBasico() * this.antiguedad() / 100;
     }
-    
+    /**
+     * Obtiene el sueldo que corresponde por el cargo(adicional incluido)
+     * @return valor del sueldo calculado
+     */
     public double sueldoDelCargo(){
         return this.getSueldoBasico() + adicionalXAntiguedad();
     }
-    
+    /**
+     * Muestra por pantalla los detalles del cargo
+     */
     public void mostrarCargo(){
         System.out.println("\t" +this.getNombreCargo() + " - Sueldo Basico: " + this.getSueldoBasico() +
         " - Sueldo Cargo: " + this.sueldoDelCargo() + " - Antiguedad: " + this.antiguedad() + " años.");

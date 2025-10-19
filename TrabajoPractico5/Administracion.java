@@ -2,8 +2,8 @@
 /**
  * Creacion de la clase ejecutable Administracion
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Bengochea Marcelo José De Jesús
+ * @author Aguilar Jonathan Alberto
  */
 public class Administracion
 {
@@ -26,6 +26,7 @@ public class Administracion
         
         jardin.detalleFiguras();
         //figuras
+        System.out.println("\t---Pequeña prueba de figuras---");
         figura9.caracteristicas();
         figura10.caracteristicas();
         

@@ -1,15 +1,17 @@
 #BlueJ class context
 comment0.target=Exclusivo
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Exclusivo\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Implementaci\u00F3n\ de\ la\ subclase\ Exclusivo.\n\ \n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\n\ @author\ Aguilar\ Jonathan\ Alberto\n
 comment1.params=p_nombre\ p_sueldo\ p_anio\ p_horasDoc\ p_horasInv\ p_horasExt
 comment1.target=Exclusivo(java.lang.String,\ double,\ int,\ int,\ int,\ int)
-comment1.text=\r\n\ Constructor\ para\ objetos\ de\ la\ clase\ Exclusivo\r\n
+comment1.text=\n\ Constructor\ para\ objetos\ de\ la\ clase\ Exclusivo\n\ @param\ p_nombre\ nombre\ del\ cargo\n\ @param\ p_sueldo\ sueldo\ del\ cargo\n\ @param\ p_anio\ a\u00F1o\ de\ ingreso\ al\ cargo\n\ @param\ p_horasDoc\ horas\ de\ docencia\n\ @param\ p_horasInv\ horas\ de\ investigaci\u00F3n\n\ @param\ p_horasExt\ horas\ de\ extensi\u00F3n\n\ \n
 comment2.params=p_horasInv
 comment2.target=void\ setHorasDeInvestigacion(int)
+comment2.text=\n\ Mutador\ para\ las\ hs\ de\ investigaci\u00F3n\n\ @param\ p_horasInv\ horas\ de\ investigaci\u00F3n\ a\ asignar\n
 comment3.params=p_horasExt
 comment3.target=void\ setHorasDeExtension(int)
 comment4.params=
 comment4.target=int\ getHorasDeInvestigacion()
+comment4.text=\n\ Obtiene\ las\ hs\ de\ investigaci\u00F3n\n\ @return\ el\ valor\ asignado\ a\ las\ hs\ de\ investigaci\u00F3n\n
 comment5.params=
 comment5.target=int\ getHorasDeExtension()
 comment6.params=
