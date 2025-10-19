@@ -1,9 +1,8 @@
 /**
- * Ejercicio 4 Modelado de la clase Alumno
- * 
+ * Modelado de la clase Alumno
  * @author Bengochea Marcelo José De Jesús
  * @author Aguilar Jonathan Alberto 
- * @version 1.00 18-08-25
+ * @version 1.00
  */
 
 import java.util.*;

@@ -7,7 +7,6 @@
  * int anioHoy = fechaHoy.get(Calendar.YEAR);<br>
  * Para más información sobre la clase Calendar buscar en la 
  * documentación de JAVA http://docs.oracle.com/javase/6/docs/api/).
- * Adaptado para cumplir con el Ejercicio 9
  * @author Bengochea Marcelo José De Jesús
  * @author Aguilar Jonathan Alberto
  * @version 1.00
@@ -149,7 +148,7 @@ public class Persona
    */
   public void mostrar(){
     System.out.println("\tNombre y Apellido: " + this.nomYApe());
-    System.out.println("\tDNI:" + this.getDni() + "  Edad: " + this.edad() + " años\n");
+    System.out.println("\tDNI:" + this.getDni() + "  Edad: " + this.edad() + " años");
   }   
   /**
    * Nuevo método que informa si es o no el cumpleaños de la persona en el día de hoy
