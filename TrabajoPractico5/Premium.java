@@ -90,7 +90,7 @@ public class Premium extends Etiqueta
      * @return "premium"
      */
     protected String tipo(){
-        return "premium";
+        return this.getClass().getSimpleName();
     };
     
     /**

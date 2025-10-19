@@ -3,7 +3,7 @@
  * 
  * @author Bengochea Marcelo José De Jesús
  * @author Aguilar Jonathan Alberto 
- * @version 1.00 18-10-25
+ * @version 1.00
  */
 
 import java.util.*;
@@ -15,22 +15,24 @@ public class Pedido
     /**
      * Constructor de Pedido (unico renglon)
      * 
-     * @param p_renglon datos del renglon (p_cant, p_item)
+     * @param p_renglon objeto de tipo Renglon
      */
     public Pedido(Renglon p_renglon){
-        ArrayList<Renglon> lista = new ArrayList<Renglon>();
-        lista.add(p_renglon);
-        
-        this.setRenglones(lista);
+        this.setRenglones(new ArrayList<Renglon>());
+        this.agregarRenglon(p_renglon);
     }
     
     /**
      * Constructor de Pedido (multiples renglones)
      * 
      * @param p_renglones ArrayList de renglones
+     * @throws IllegalArgumentException cuando la lista se envía vacía
      */
     public Pedido(ArrayList<Renglon> p_renglones){
-        this.setRenglones(p_renglones);
+        if(p_renglones.isEmpty()){
+            throw new IllegalArgumentException("Debe tener elementos cargados");
+        }
+        this.setRenglones(new ArrayList<Renglon>(p_renglones));
     }
     
     /**
@@ -84,7 +86,7 @@ public class Pedido
         System.out.println("\tPedido:");
         System.out.println("\tCantidad de items:" + this.getRenglones().size() + "\n");
         
-        for(Renglon a: renglones){
+        for(Renglon a: this.getRenglones()){
             System.out.print("\tItem " + contItem + ": ");
             a.mostrar();
             System.out.println("\tPrecio:$" + a.getImporte());

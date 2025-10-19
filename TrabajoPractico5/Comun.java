@@ -78,11 +78,11 @@ public class Comun extends Etiqueta
     /**
      * Metodo que muestra el tipo de etiqueta comprada
      * 
-     * @return "Comun"
+     * @return el nombre de la clase
      */
     protected String tipo(){
-        return "Común";
-    };
+        return this.getClass().getSimpleName();
+    }
     
     /**
      * Metodo que devuelve el objeto en forma de String
