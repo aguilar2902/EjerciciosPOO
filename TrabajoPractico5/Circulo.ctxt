@@ -1,18 +1,18 @@
 #BlueJ class context
 comment0.target=Circulo
-comment0.text=\n\ Implementaci\u00F3n\ de\ la\ clase\ C\u00EDrculo\n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\n\ @author\ Aguilar\ Jonathan\ Alberto\n\ @version\ 1.00\n
+comment0.text=\r\n\ Implementaci\u00F3n\ de\ la\ clase\ C\u00EDrculo\r\n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\r\n\ @author\ Aguilar\ Jonathan\ Alberto\r\n\ @version\ 1.00\r\n
 comment1.params=p_x\ p_y\ p_radio
 comment1.target=Circulo(double,\ double,\ double)
-comment1.text=\n\ Constructor\ de\ un\ C\u00EDrculo\ con\ un\ punto\ de\ origen\ distinto\ a\ (0,0)\n\ @param\ p_x\ coordenada\ x\ del\ punto\ de\ origen\n\ @param\ p_y\ coordenada\ y\ del\ punto\ de\ origen\n\ @param\ p_radio\ radio\ del\ circulo\n
+comment1.text=\r\n\ Constructor\ de\ un\ C\u00EDrculo\ con\ un\ punto\ de\ origen\ distinto\ a\ (0,0)\r\n\ @param\ p_x\ coordenada\ x\ del\ punto\ de\ origen\r\n\ @param\ p_y\ coordenada\ y\ del\ punto\ de\ origen\r\n\ @param\ p_radio\ radio\ del\ circulo\r\n
 comment2.params=p_radio
 comment2.target=Circulo(double)
-comment2.text=\n\ Constructor\ de\ un\ C\u00EDrculo\ con\ punto\ de\ origen\ en\ (0,0)\n\ @param\ p_radio\ radio\ del\ circulo\n
+comment2.text=\r\n\ Constructor\ de\ un\ C\u00EDrculo\ con\ punto\ de\ origen\ en\ (0,0)\r\n\ @param\ p_radio\ radio\ del\ circulo\r\n
 comment3.params=
 comment3.target=double\ perimetro()
-comment3.text=\n\ @return\ el\ valor\ que\ corresponde\ al\ per\u00EDmetro\ del\ c\u00EDrculo\n
+comment3.text=\r\n\ @return\ el\ valor\ que\ corresponde\ al\ per\u00EDmetro\ del\ c\u00EDrculo\r\n
 comment4.params=
 comment4.target=void\ caracteristicas()
-comment4.text=\n\ Muestra\ las\ caracter\u00EDsticas\ de\ la\ Elipse\n
+comment4.text=\r\n\ Muestra\ las\ caracter\u00EDsticas\ de\ la\ Elipse\r\n
 comment5.params=
 comment5.target=java.lang.String\ nombreFigura()
 numComments=6

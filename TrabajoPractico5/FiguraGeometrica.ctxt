@@ -1,20 +1,20 @@
 #BlueJ class context
 comment0.target=FiguraGeometrica
-comment0.text=\n\ Implementaci\u00F3n\ de\ la\ clase\ abstracta\ FiguraGeometrica.\n\ \n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\n\ @author\ Aguilar\ Jonathan\ Alberto\n\ @version\ 1.00\n
+comment0.text=\r\n\ Implementaci\u00F3n\ de\ la\ clase\ abstracta\ FiguraGeometrica.\r\n\ \r\n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\r\n\ @author\ Aguilar\ Jonathan\ Alberto\r\n\ @version\ 1.00\r\n
 comment1.params=p_x\ p_y
 comment1.target=FiguraGeometrica(double,\ double)
-comment1.text=\n\ Constructor\ de\ FiguraGeometrica\ con\ coordenadas\n\ @param\ p_x\ coordenada\ eje\ x\n\ @param\ p_y\ coordenada\ eje\ y\n
+comment1.text=\r\n\ Constructor\ de\ FiguraGeometrica\ con\ coordenadas\r\n\ @param\ p_x\ coordenada\ eje\ x\r\n\ @param\ p_y\ coordenada\ eje\ y\r\n
 comment2.params=p_origen
 comment2.target=void\ setOrigen(Punto)
-comment2.text=\n\ Mutador\ para\ setear\ el\ punto\ de\ origen\n\ @param\ p_origen\ corresponde\ a\ un\ objeto\ Punto\n
+comment2.text=\r\n\ Mutador\ para\ setear\ el\ punto\ de\ origen\r\n\ @param\ p_origen\ corresponde\ a\ un\ objeto\ Punto\r\n
 comment3.params=
 comment3.target=Punto\ getOrigen()
-comment3.text=\n\ Observador\ que\ obtiene\ el\ punto\ de\ origen\n\ @return\ un\ objeto\ Punto\ que\ representa\ el\ origen\n
+comment3.text=\r\n\ Observador\ que\ obtiene\ el\ punto\ de\ origen\r\n\ @return\ un\ objeto\ Punto\ que\ representa\ el\ origen\r\n
 comment4.params=
 comment4.target=java.lang.String\ nombreFigura()
 comment5.params=
 comment5.target=double\ superficie()
 comment6.params=
 comment6.target=void\ mostrarSuperficie()
-comment6.text=\n\ Muestra\ por\ pantalla\ la\ superficie\ de\ la\ figura\n
+comment6.text=\r\n\ Muestra\ por\ pantalla\ la\ superficie\ de\ la\ figura\r\n
 numComments=7
