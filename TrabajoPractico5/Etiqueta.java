@@ -6,7 +6,7 @@
  * @author Aguilar Jonathan Alberto 
  * @version 1.00 18-10-25
  */
-abstract class Etiqueta
+public abstract class Etiqueta
 {
     private double costo;
     

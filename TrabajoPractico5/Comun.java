@@ -54,8 +54,8 @@ public class Comun extends Etiqueta
      * @return precio final a pagar - (costo * cant + plus) * descuento
      */
     public double precio(int q){
-        return ((super.getCosto() * q) + this.getPlus()) * (1 - this.descuento(q));    
-    };
+        return ((this.getCosto() * q) + this.getPlus()) * (1 - this.descuento(q));    
+    }
     
     /**
      * Metodo que calcula el descuento

@@ -57,7 +57,7 @@ public class Premium extends Etiqueta
      * @return devuelve el precio - (costo * cant) * adicional
      */
     public double precio(int q){
-        return (super.getCosto() * q) * (1 + this.adicional()) ;    
+        return (this.getCosto() * q) * (1 + this.adicional()) ;    
     }
     
     /**
@@ -91,7 +91,7 @@ public class Premium extends Etiqueta
      */
     protected String tipo(){
         return this.getClass().getSimpleName();
-    };
+    }
     
     /**
      * Metodo que devuelve el objeto en forma de String
