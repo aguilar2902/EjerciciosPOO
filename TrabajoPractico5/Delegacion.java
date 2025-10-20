@@ -59,31 +59,44 @@ public class Delegacion extends Visitante
     }
     
     /**
-     * Metodo que retorna
+     * @return nombre de la clase
      */
     public String tipoVisitante(){
-        return "Delegacion";
+        return this.getClass().getSimpleName();
     }
-    
+    /**
+     * Agrega un individuo a la lista de integrantes
+     * @param p_individuo individuo a agregar
+     */
     public void inscribirIndividuo(Individuo p_individuo){
         this.getIntegrantes().add(p_individuo);
     }
-    
+    /**
+     * Quita un individuo de la lista de integrantes
+     * @param p_individuo a quitar
+     * @return confirmación de la operación (booleano)
+     */
     public boolean quitarIntegrante(Individuo p_individuo){
         return this.getIntegrantes().remove(p_individuo);
     }
-    
+    /**
+     * @return la cantidad de integrantes de la delegación
+     */
     public int cantidadIntegrantes(){
         return this.getIntegrantes().size();
     }
-    
+    /**
+     * Muestra los detalles de cada individuo
+     */
     public void mostrar(){
-        for(Individuo lista: this.getIntegrantes()){
-            lista.mostrar();
+        for(Individuo individuo: this.getIntegrantes()){
+            individuo.mostrar();
             System.out.println();
         }
     }
-    
+    /**
+     * @return el costo de la entrada
+     */
     public double entrada(){
         double aux = 0.0;
         for(Individuo lista: this.getIntegrantes()){
@@ -92,7 +105,11 @@ public class Delegacion extends Visitante
         
         return aux * (1 - 0.1);
     }
-    
+    /**
+     * Muestra los visitantes por fecha y tipo
+     * @param p_fecha fecha
+     * @param p_visitante tipo de visitante
+     */
     public void listarPorFecha(Calendar p_fecha, String p_visitante){
         if((this.tipoVisitante().equalsIgnoreCase(p_visitante)) && this.getFechaVisita().equals(p_fecha)){
             System.out.println(super.getNombre());
@@ -100,12 +117,14 @@ public class Delegacion extends Visitante
         }
         
     }
-    
+    /**
+     * @return lista de individuos de la delegación, sin repetir
+     */
     public HashSet<Persona> listarPersonas(){
         HashSet<Persona> lista = new HashSet<Persona>();
         
-        for(Individuo a: this.getIntegrantes()){
-            lista.addAll(a.listarPersonas());
+        for(Individuo individuo: this.getIntegrantes()){
+            lista.addAll(individuo.listarPersonas());
         }
         
         return lista;

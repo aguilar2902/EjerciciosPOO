@@ -1,14 +1,17 @@
 #BlueJ class context
 comment0.target=Servicio
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Servicio\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Implementaci\u00F3n\ de\ Servicio\n\ \n\ @author\ Bengochea\ Marcelo\ Jos\u00E9\ De\ Jes\u00FAs\n\ @author\ Aguilar\ Jonathan\ Alberto\n\ @version\ 1.00\n
 comment1.params=p_desc\ p_precio
 comment1.target=Servicio(java.lang.String,\ double)
+comment1.text=\n\ Constructor\ de\ Servicio\n\ @param\ p_desc\ descripci\u00F3n\ del\ servicio\n\ @param\ p_precio\ costo\ del\ servicio\n
 comment2.params=p_desc
 comment2.target=void\ setDescripcion(java.lang.String)
+comment2.text=\n\ Setea\ la\ descripci\u00F3n\ del\ servicio\n\ @param\ p_desc\ descripci\u00F3n\ a\ agregar\n
 comment3.params=p_precio
 comment3.target=void\ setPrecio(double)
 comment4.params=
 comment4.target=java.lang.String\ getDescripcion()
+comment4.text=\n\ Obtiene\ la\ descripci\u00F3n\n\ @return\ descripci\u00F3n\ del\ servicio\n
 comment5.params=
 comment5.target=double\ getPrecio()
 numComments=6

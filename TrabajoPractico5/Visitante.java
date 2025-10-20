@@ -8,7 +8,7 @@
  */
 import java.util.*;
 
-abstract class Visitante
+public abstract class Visitante
 {
     private String nombre;
     private Calendar fechaVisita;
@@ -23,7 +23,7 @@ abstract class Visitante
         this.setNombre(p_nombre);
         this.setFechaVisita(p_fecha);
     }
-    
+    //Mutadores
     /**
      * Mutador de nombre
      * 
@@ -32,11 +32,10 @@ abstract class Visitante
     private void setNombre(String p_nombre){
         this.nombre = p_nombre;
     }
-    
     private void setFechaVisita(Calendar p_fecha){
         this.fechaVisita = p_fecha;
     }
-    
+    //Observadores
     /**
      * Observador de nombre
      * 
@@ -45,11 +44,11 @@ abstract class Visitante
     public String getNombre(){
         return this.nombre;
     }
-    
     public Calendar getFechaVisita(){
         return this.fechaVisita;
     }
     
+    //Métodos abstractos
     public abstract void mostrar();
     
     public abstract double entrada();

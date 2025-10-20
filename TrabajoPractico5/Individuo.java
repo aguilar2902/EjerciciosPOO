@@ -44,13 +44,13 @@ public class Individuo extends Visitante
     }
     
     /**
-     * Metodo que muestra el tipo de visitante
+     * Metodo que obtiene el tipo de visitante
      * 
      * @return tipo de visitante
      */
     
     public String tipoVisitante(){
-        return "Individuo";
+        return this.getClass().getSimpleName();
     }
     
     /**
