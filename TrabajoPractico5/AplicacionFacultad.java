@@ -44,6 +44,8 @@ public class AplicacionFacultad
             System.out.println("\t---Error: " + e);
         } catch (Exception e){
             System.out.println("Error: " + e);
-        }        
+        } finally {
+            System.out.println("\n\t------Programa finalizado--------");
+        }
     }
 }

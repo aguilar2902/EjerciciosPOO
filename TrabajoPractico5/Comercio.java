@@ -1,10 +1,12 @@
 
 /**
- * Write a description of class Comercio here.
+ * Implementación de Comercio para las pruebas
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Bengochea Marcelo José De Jesús
+ * @author Aguilar Jonathan Alberto
+ * @version 1.00
  */
+import java.util.*;
 public class Comercio
 {
     public static void main(String[]  args){
@@ -14,20 +16,17 @@ public class Comercio
         ArtefactoHogar heladera1 = new Heladera("Gafa", 1200, 8, 11, 2, true);
         ArtefactoHogar lavarropa1 = new Lavarropas("Drean", 1150, 10, 8, 7, false);
         
-        
-        cocina1.imprimir();
-        System.out.println("\tCuotas: " + cuotas + " - Interes: " + interes + "%");
-        System.out.println("\tValor Cuota: " + cocina1.cuotaCredito(cuotas, interes));
-        System.out.println("\tValor Cuota con Adicionales: " + cocina1.creditoConAdicional(cuotas, interes));
-        System.out.println("-------------------------------------");
-        heladera1.imprimir();
-        System.out.println("\tCuotas: " + cuotas + " - Interes: " + interes + "%");
-        System.out.println("\tValor Cuota: " + heladera1.cuotaCredito(cuotas, interes));
-        System.out.println("\tValor Cuota con Adicionales: " + heladera1.creditoConAdicional(6, 5));
-        System.out.println("-------------------------------------");
-        lavarropa1.imprimir();
-        System.out.println("\tCuotas: " + cuotas + " - Interes: " + interes + "%");
-        System.out.println("\tValor Cuota: " + lavarropa1.cuotaCredito(cuotas, interes));
-        System.out.println("\tValor Cuota con Adicionales: " + lavarropa1.creditoConAdicional(cuotas, interes));
+        ArrayList<ArtefactoHogar> electrodomesticos = new ArrayList<ArtefactoHogar>();
+
+        electrodomesticos.add(cocina1);
+        electrodomesticos.add(heladera1);
+        electrodomesticos.add(lavarropa1);
+        for(ArtefactoHogar electrodomestico : electrodomesticos){
+            electrodomestico.imprimir();
+            System.out.println("\tCuotas: " + cuotas + " - Interes: " + interes + "%");
+            System.out.println("\tValor Cuota: " + electrodomestico.cuotaCredito(cuotas, interes));
+            System.out.println("\tValor Cuota con Adicionales: " + electrodomestico.creditoConAdicional(cuotas, interes));
+            System.out.println("-------------------------------------");
+        }
     }
 }
